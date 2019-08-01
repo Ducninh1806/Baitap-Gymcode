@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+</head>
+<body>
+Amount
+<label>
+    <input type="text" id="nhaptien">
+</label>
+Form Currency
+<label>
+    <select id="tiencandoi">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+</label>
+To Currency
+<label>
+    <select id="tienquydoi">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+</label>
+<button type="button" onclick="Covert()">Covert</button>
+<p id="hienthi"></p>
+<script>
+    function Covert() {
+    let tiendoi = document.getElementById('tiencandoi').value;
+    let tienchuyendoi = document.getElementById('tienquydoi').value;
+    let sotien = document.getElementById("nhaptien").value;
+        if (tiendoi === "VND" && tienchuyendoi === "USD"){
+            document.getElementById('hienthi').innerHTML="Kết quả: " +sotien/23000+"USD";
+        }else if (tiendoi ==="VND" && tienchuyendoi==="VND"){
+            document.getElementById('hienthi').innerHTML="Kết quả: " +sotien+"VND";
+        } else if (tiendoi ==="USD" && tienchuyendoi==="VND") {
+            document.getElementById('hienthi').innerHTML = "Kết quả: " + sotien *23000 +"VND";
+        }else if (tiendoi ==="USD" && tienchuyendoi==="USD") {
+            document.getElementById('hienthi').innerHTML = "Kết quả: " + sotien +"USD";
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

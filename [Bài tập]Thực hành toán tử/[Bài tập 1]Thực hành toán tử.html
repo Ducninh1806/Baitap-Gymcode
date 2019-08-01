@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="nhập giá trị 1" id="so1">
+<input type="text" value="nhập giá trị 2" id="so2">
+<input type="button" value="Kiemtra" onclick="kiemtra()">
+<p id="hienthi"></p>
+<script>
+    function kiemtra() {
+        let a = parseInt(document.getElementById("so1").value);
+        let b = parseInt(document.getElementById("so2").value);
+        let c = a + b;
+        if ( c < 4) {
+            let r= document.getElementById("hienthi").innerHTML= "Below";
+            console.log(typeof(r));
+        }else {
+            document.getElementById("hienthi").innerHTML= "Over";
+        }
+    }
+
+
+</script>
+</body>
+</html>

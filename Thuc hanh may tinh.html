@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>[Bài tập] Thực hành máy tính</title>
 </head>
 <body>
-$END$
+
+<input type="text" value="" id="nhapso1">
+
+<input type="text" value="" id="nhapso2">
+<br>
+<button type="button" value="+" onclick="Addition()">Additon+</button>
+<button type="button" value="-" onclick="Suctraction()">Suctraction-</button>
+<button type="button" value="*" onclick="Mutiplication()">MutiplicationX</button>
+<button type="button" value="/" onclick="Division()">Division/</button>
+<p id="ketqua"></p>
+<script>
+    function Addition() {
+        let a = parseInt(document.getElementById('nhapso1').value);
+        let b = parseInt(document.getElementById('nhapso2').value);
+        let c = a + b;
+        document.getElementById('ketqua').innerHTML = "Kết quả phép cộng: " + c;
+    }
+    function Suctraction() {
+        let a = parseInt(document.getElementById('nhapso1').value);
+        let b = parseInt(document.getElementById('nhapso2').value);
+        let c = a - b;
+        document.getElementById('ketqua').innerHTML = "Kết quả phép trừ: " + c;
+    }
+    function Mutiplication() {
+        let a = parseInt(document.getElementById('nhapso1').value);
+        let b = parseInt(document.getElementById('nhapso2').value);
+        let c = a * b;
+        document.getElementById('ketqua').innerHTML = "Kết quả phép nhân: " + c;
+    }
+    function Division() {
+        let a = parseInt(document.getElementById('nhapso1').value);
+        let b = parseInt(document.getElementById('nhapso2').value);
+        let c = a / b;
+        document.getElementById('ketqua').innerHTML = "Kết quả phép chia: " + c;
+    }
+
+</script>
+
+
 </body>
 </html>

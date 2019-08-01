@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm thừa số nguyên tố</title>
+</head>
+<body>
+<label>
+    <input id="nhapso" type="text">
+</label>
+<button type="button" onclick="ketqua()">ketqua</button>
+<p id="hienthi"></p>
+<script>
+    function ketqua() {
+        let nhapso = document.getElementById('nhapso').value;
+        let a = nhapso%2;
+        let b = nhapso%3;
+        if (a===0 || b ===0){
+        document.getElementById('hienthi').innerHTML="kết quả: "+ nhapso +"Không phải là số nguyên tố"
+        }else {
+            document.getElementById("hienthi").innerHTML="kết quả: "+ nhapso + "là số nguyên tố"
+
+        }
+    }
+</script>
+
+
+</body>
+</html>

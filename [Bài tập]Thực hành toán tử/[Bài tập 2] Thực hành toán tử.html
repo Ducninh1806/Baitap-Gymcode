@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Login:
+<input type="text" id="login">
+<button type="button" onclick="Login()">Login</button>
+<p id="display"></p>
+<script>
+    function Login() {
+        let display=document.getElementById("login").value;
+        switch (display) {
+            case 'Employee':
+                document.getElementById("display").innerHTML='hello';
+                break;
+            case 'Director':
+                document.write("Greeting");
+                break;
+            case '':
+                document.write("No login");
+                break;
+            default:
+                document.write("");
+                break;
+
+        }
+
+
+    }
+
+</script>
+
+</body>
+</html>
