@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="add number">
+<button type="button" onclick="total()">Total</button>
+<p id="display"></p>
+<script>
+    function total() {
+        let num = document.getElementById('add number').value;
+        let total=0;
+        let i;
+        for (i=0; i<=num; i+=1){
+            total +=i;
+        }
+        document.getElementById('display').innerHTML= "Tổng: "+ total;
+    }
+</script>
+</body>
+</html>
