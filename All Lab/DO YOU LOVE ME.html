@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="click()">
+<h1> DO YOU LOVE ME</h1>
+<button type="button" id="yes" style="position: relative" onmouseover="yes()" >Yes</button>
+<button type="button" onclick="alert( 'Why do not you love me????')">No</button>
+
+<script>
+    function yes() {
+        let yes = document.getElementById("yes");
+        yes.style.left= Math.random()*window.innerWidth+"px";
+        yes.style.top= Math.random()*window.innerHeight+"px";
+    }
+    function click() {
+        document.addEventListener('click',yes);
+    }
+</script>
+</body>
+</html>

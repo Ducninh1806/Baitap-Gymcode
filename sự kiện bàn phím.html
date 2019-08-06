@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="moveExpress()">
+<img id="nobita"  src="Session 2/anh-nobita-16.jpg" style="position: absolute;top:0;left: 0" height="400" width="200"/>
+<script>
+    function uparrow() {
+        let element = document.getElementById("nobita");
+        element.style.top= parseInt(element.style.top) -5+"px";
+    }function downarrow() {
+        let element = document.getElementById("nobita");
+        element.style.top= parseInt(element.style.top) +5 +"px";
+    }function right() {
+        let element = document.getElementById("nobita");
+        element.style.left= parseInt(element.style.left) +5+"px";
+    }function left() {
+        let element = document.getElementById("nobita");
+        element.style.left= parseInt(element.style.left) -5 +"px";
+    }
+    function move(evt) {
+    switch (evt.which){
+        case 38:
+            uparrow();
+            break;
+        case 40:
+            downarrow();
+            break;
+        case 39:
+            right();
+            break;
+        case 37:
+            left();
+            break;
+        }
+    }
+    function moveExpress() {
+        window.addEventListener('keydown',move);
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="init()">
+
+<h1>DO YOU LOVE ME</h1>
+<input type="button" onclick="alert('I love you, too')" value="Yes"/>
+<input type="button" onmouseover="no()"  id="no" value="No"/>
+<script>
+    function no() {
+        let no = document.getElementById("no");
+        no.style.position="relative";
+        no.style.left= Math.random()*window.innerWidth+"px";
+        no.style.top= Math.random()*window.innerHeight+"px";
+    }
+    function init() {
+        window.addEventListener("init",no);
+    }
+
+
+</script>
+</body>
+</html>

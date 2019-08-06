@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 7: Giải phương trình bậc 2. <br>
+
+<input type="text" id="giatria" value="nhập giá trị a"> x2 +
+<input type="text" id="giatrib" value="nhập giá trị b"> x +
+<input type="text" id="giatric" value="nhập giá trị c"> = 0 <br>
+<button type="button" onclick="Kiemtra()">Kiểm tra phương trình</button>
+<p id="manhinh"></p>
+<script>
+    function Kiemtra(){
+        let a =parseInt(document.getElementById("giatria").value);
+        let b =parseInt(document.getElementById("giatrib").value);
+        let c =parseInt(document.getElementById("giatric").value);
+        let delta = b*b-4*a*c;
+        if (delta <0 && a!=0) {
+            document.getElementById("manhinh").innerHTML= "Phương trình vô nghiệm";
+        }else if (delta ==0 && a!=0){
+            let x=-b/(2*a);
+            document.getElementById("manhinh").innerHTML= "Phương trình có nghiệm kép: x1 = x2 = "+x ;
+        }else if (delta > 0 && a!=0){
+            let x1 = (-b + Math.sqrt(delta))/(2*a);
+            let x2 = (-b - Math.sqrt(delta))/(2*a);
+            document.getElementById("manhinh").innerHTML= "Phương trình có nghiệm : x1= "+x1+ " và x2= "+x2;
+        }
+    }
+</script>
+</body>
+</html>

@@ -3,84 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
 <label>
-    <input style="width: 290px; height: 70px" type="text" id="giatriso"><br>
-    <button type="button" id="xoa" onclick="AC()" style="width: 70px;height: 70px;font-size: 30px" value="AC">AC</button><br>
-    <button type="button" id="so1" onclick="number1()" style="width: 70px;height: 70px;font-size: 30px" value="1">1</button>
-    <button type="button" id="so2" onclick="number2()" style="width: 70px;height: 70px;font-size: 30px" value="2">2</button>
-    <button type="button" id="so3" onclick="number3()" style="width: 70px;height: 70px;font-size: 30px" value="3">3</button>
-    <button type="button" id="cong" onclick="cong()" style="width: 70px;height: 70px;font-size: 30px" value="+">+</button><br>
-    <button type="button" id="so4" onclick="number4()" style="width: 70px;height: 70px;font-size: 30px" value="4">4</button>
-    <button type="button" id="so5" onclick="number5()" style="width: 70px;height: 70px;font-size: 30px" value="5">5</button>
-    <button type="button" id="so6" onclick="number6()" style="width: 70px;height: 70px;font-size: 30px" value="6">6</button>
-    <button type="button" id="tru" onclick="tru()" style="width: 70px;height: 70px;font-size: 30px" value="-">-</button><br>
-    <button type="button" id="so7" onclick="number7()" style="width: 70px;height: 70px;font-size: 30px" value="7">7</button>
-    <button type="button" id="so8" onclick="number8()" style="width: 70px;height: 70px;font-size: 30px" value="8">8</button>
-    <button type="button" id="so9" onclick="number9()" style="width: 70px;height: 70px;font-size: 30px" value="9">9</button>
-    <button type="button" id="nhan" onclick="nhan()" style="width: 70px;height: 70px;font-size: 30px" value="*">*</button><br>
-    <button type="button" id="so0" onclick="number0()" style="width: 70px;height: 70px;font-size: 30px" value="0">0</button>
-    <button type="button" id="cham" onclick="cham()" style="width: 70px;height: 70px;font-size: 30px" value=".">.</button>
-    <button type="button" id="bang" onclick="bang()" style="width: 70px;height: 70px;font-size: 30px" value="=">=</button>
-    <button type="button" id="chia" onclick="chia()" style="width: 70px;height: 70px;font-size: 30px" value="/">/</button>
+    <input style="width: 290px; height: 70px " type="text" id="display"><br>
+    <button type="button" onclick="reset()" style="width: 70px;height: 70px;font-size: 30px" value="AC">AC</button><br>
+    <button type="button" onclick="clickNumber(1)" style="width: 70px;height: 70px;font-size: 30px" value="1">1</button>
+    <button type="button" onclick="clickNumber(2)" style="width: 70px;height: 70px;font-size: 30px" value="2">2</button>
+    <button type="button" onclick="clickNumber(3)" style="width: 70px;height: 70px;font-size: 30px" value="3">3</button>
+    <button type="button" onclick="clickOperator('+')" style="width: 70px;height: 70px;font-size: 30px" value="+">+</button><br>
+    <button type="button" onclick="clickNumber(4)" style="width: 70px;height: 70px;font-size: 30px" value="4">4</button>
+    <button type="button" onclick="clickNumber(5)" style="width: 70px;height: 70px;font-size: 30px" value="5">5</button>
+    <button type="button" onclick="clickNumber(6)" style="width: 70px;height: 70px;font-size: 30px" value="6">6</button>
+    <button type="button" onclick="clickOperator('-')" style="width: 70px;height: 70px;font-size: 30px" value="-">-</button><br>
+    <button type="button" onclick="clickNumber(7)" style="width: 70px;height: 70px;font-size: 30px" value="7">7</button>
+    <button type="button" onclick="clickNumber(8)" style="width: 70px;height: 70px;font-size: 30px" value="8">8</button>
+    <button type="button" onclick="clickNumber(9)" style="width: 70px;height: 70px;font-size: 30px" value="9">9</button>
+    <button type="button" onclick="clickOperator('*')" style="width: 70px;height: 70px;font-size: 30px" value="*">*</button><br>
+    <button type="button" onclick="clickNumber(9)" style="width: 70px;height: 70px;font-size: 30px" value="0">0</button>
+    <button type="button" onclick="clickNumber('.')" style="width: 70px;height: 70px;font-size: 30px" value=".">.</button>
+    <button type="button" onclick="clickEqual('=')" style="width: 70px;height: 70px;font-size: 30px" value="=">=</button>
+    <button type="button" onclick="clickOperator('/')" style="width: 70px;height: 70px;font-size: 30px" value="/">/</button>
 </label>
+<script src="may tinh.js"></script>
 
-<script>
-    function AC() {
-        document.getElementById("giatriso").value = "";
-    }
-    function number1(){
-        document.getElementById("giatriso").value += 1;
-    }
-    function number2(){
-        document.getElementById('giatriso').value += 2;
-    }
-    function number3(){
-        document.getElementById('giatriso').value += 3;
-    }
-    function number4(){
-        document.getElementById('giatriso').value += 4;
-    }
-    function number5(){
-        document.getElementById('giatriso').value += 5;
-    }
-    function number6(){
-        document.getElementById('giatriso').value += 6;
-    }
-    function number7(){
-        document.getElementById('giatriso').value += 7;
-    }
-    function number8(){
-        document.getElementById('giatriso').value += 8;
-    }
-    function number9(){
-        document.getElementById('giatriso').value += 9;
-    }
-    function number0(){
-        document.getElementById('giatriso').value += 0;
-    }
-    function cong(){
-        document.getElementById('giatriso').value += '+';
-    }
-    function tru(){
-        document.getElementById('giatriso').value += '-';
-    }
-    function nhan(){
-        document.getElementById('giatriso').value += '*';
-    }
-    function chia(){
-        document.getElementById('giatriso').value += /;
-    }
-    function cham(){
-        document.getElementById('giatriso').value += '.';
-    }
-
-
-
-
-
-</script>
 
 </body>
 </html>

@@ -55,7 +55,6 @@ function clickEqual() {
     } else if (operator === '-') {
         result = firstOperand - secondOperand;
     }
-
     display.value = result;
     isEqualClicked = true;
 }

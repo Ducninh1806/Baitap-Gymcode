@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+<br>
+
+<script>
+    let diemkiemtra= parseInt(prompt('Nhập điểm kiểm tra'));
+    let diemgiuaky= parseInt(prompt('Nhập điểm giữa kỳ'));
+    let diemcuoiky= parseInt(prompt('nhập điểm cuối kỳ'));
+    let diemtrungbinh = (diemkiemtra + diemgiuaky*2 + diemcuoiky*3)/6;
+    if (diemtrungbinh <3.5){
+        alert ("Điểm trung bình môn học: "+diemtrungbinh+" xHọc lực yếu");
+    } else if  (diemtrungbinh >=3.5 && diemtrungbinh <6){
+        alert ("Điểm trung bình môn học: "+diemtrungbinh+" Học lực trung bình");
+    }else if (diemtrungbinh >=6 && diemtrungbinh <7.5){
+        alert ("Điểm trung bình môn học: "+diemtrungbinh+" Học lực khá");
+    }else if (diemtrungbinh >=7.5 && diemtrungbinh <8.5){
+        alert ("Điểm trung bình môn học: "+diemtrungbinh+" Học lực giỏi");
+    }else if (diemtrungbinh >=8.5 && diemtrungbinh <=10){
+        alert ("Điểm trung bình môn học: "+diemtrungbinh+" Học lực suất sắc");
+    }
+</script>
+
+</body>
+</html>

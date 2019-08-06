@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b. <br>
+<table>
+<tr>
+    <th> Chiều rộng HCN:</th>
+    <th> Chiều dài HCN:</th>
+
+</tr>
+<tr>
+    <td> <input type="text" id="chieurong"></td>
+    <td> <input type="text" id="chieudai"></td>
+    <td> <button type="button" onclick="ketqua()">Kết quả</button> </td>
+</tr>
+</table>
+<p  id="hienthi"></p>
+<script>
+function ketqua() {
+    let chieurong = parseInt(document.getElementById("chieurong").value);
+    let chieudai = parseInt(document.getElementById("chieudai").value);
+    let dientich= chieudai*chieurong;
+
+    document.getElementById("hienthi").innerHTML="Diện tích hình chữ nhật là: " +dientich +"m2";
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

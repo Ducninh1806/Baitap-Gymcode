@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 10: Viết chương trình tính giá điện.<br>
+Giá bán lẻ điện sinh hoạt<br>
+
+Bậc 1: Cho kWh từ 0 - 50 =1.678<br>
+Bậc 2: Cho kWh từ 51 - 100 =1.734<br>
+Bậc 3: Cho kWh từ 101 - 200 =2.014<br>
+Bậc 4: Cho kWh từ 201 - 300 =2.536<br>
+Bậc 5: Cho kWh từ 301 - 400 =2.834<br>
+Bậc 6: Cho kWh từ 401 trở lên =2.927<br>
+<br>
+TỔng só điện trong tháng<br>
+<input type="text" id="sodien">
+<button type="button" onclick="sotien()">Số tiền</button>
+<p id="manhinh"></p>
+
+<script>
+    function sotien() {
+        let sodien = parseInt(document.getElementById("sodien").value);
+        let bac = 50;
+        let bac1 = 50 * 1678;
+        let bac2 = 50 * 1734;
+        let bac3 = 100 * 2014;
+        let bac4 = 100 * 2536;
+        let bac5 = 100 * 2834;
+        if (sodien <= 50) {
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sodien * 1678 + " VND";
+        } else if (sodien > 51 && sodien <= 100) {
+            let sotienbac2 = bac1 + (sodien - bac) * 1734;
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sotienbac2 + "VND";
+        } else if (sodien > 100 && sodien <= 200) {
+            let sotienbac3 = bac1 + bac2 + (sodien - 2 * bac) * 2014;
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sotienbac3 + "VND";
+        } else if (sodien > 200 && sodien <= 300) {
+            let sotienbac4 = bac1 + bac2 + bac3 + (sodien - 4 * bac) * 2536;
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sotienbac4 + "VND";
+        } else if (sodien > 300 && sodien <= 400) {
+            let sotienbac5 = bac1 + bac2 + bac3 + bac4 + (sodien - 6 * bac) * 2834;
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sotienbac5 + "VND";
+        } else if (sodien > 400) {
+            let sotienbac6 = bac1 + bac2 + bac3 + bac4 + bac5 + (sodien - 8 * bac) * 2927;
+            document.getElementById("manhinh").innerHTML = "Số điện của bạn trong tháng này hết: " + sotienbac6 + "VND";
+        }
+    }
+    
+    
+    
+    
+</script>
+</body>
+</html>

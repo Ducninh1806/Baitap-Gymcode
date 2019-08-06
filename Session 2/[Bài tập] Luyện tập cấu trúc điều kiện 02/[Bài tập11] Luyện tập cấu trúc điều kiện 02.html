@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+<br>
+Tiền lương của 1 tháng : 
+<input type="text" id="tienluong">
+<button type="button" onclick="thue()">Kiểm tra</button>
+<p id="hienthi"></p>
+<script>
+function thue() {
+    let tienluong = parseInt(document.getElementById("tienluong").value);
+    if (tienluong <5000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + tienluong*5/100+ "VND";
+    }else if(tienluong >5000000 && tienluong <=10000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*10/100 -250000)+ "VND";
+    }else if (tienluong >10000000 && tienluong <=18000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*15/100 -750000) + "VND";
+    }else if (tienluong >18000000 && tienluong <=32000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*20/100 -1650000) + "VND";
+    }else if (tienluong >32000000 && tienluong <=52000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*25/100 -3250000) + "VND";
+    }else if (tienluong >52000000 && tienluong <=80000000){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*30/100 -5850000) + "VND";
+    }else if (tienluong >80000000 ){
+        document.getElementById("hienthi").innerHTML= "Thuế thu nhập cá nhân cần phải đóng trong 1 tháng là: " + (tienluong*35/100 -9850000) + "VND";
+    }
+    
+    
+    
+}
+</script>
+</body>
+</html>

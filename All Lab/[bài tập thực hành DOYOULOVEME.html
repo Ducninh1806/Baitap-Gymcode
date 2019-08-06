@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="moveno()">
+<h1> DO YOU LOVE ME</h1>
+
+<button type="button" onclick="alert('I LOVE YOU, TOO!!!')">Yes</button>
+<button type="button" onmouseover="no()" style="position: relative" id="no">No</button>
+<script>
+
+    function no() {
+        let no = document.getElementById("no");
+        no.style.left= Math.random()*window.innerWidth+"px";
+        no.style.top= Math.random()*window.innerHeight+"px";
+    }
+    function moveno() {
+        document.addEventListener("moveno",no);
+    }
+</script>
+</body>
+</html>

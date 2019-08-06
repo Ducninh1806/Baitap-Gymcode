@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 3: Tính diện tích hình vuông khi biết cạnh a. <br>
+
+Cạnh hình vuông <input type="text" id="canhvuong">
+<button onclick="ketqua()" type="button">Kết quả</button>
+<p id="hienthi"></p>
+
+<script>
+    function ketqua(){
+        let canhvuong= parseInt(document.getElementById("canhvuong").value);
+        let ketqua = canhvuong* canhvuong;
+        document.getElementById("hienthi").innerHTML="Diện tích hình vuông: " +ketqua + "m2";
+    }
+
+</script>
+</body>
+</html>

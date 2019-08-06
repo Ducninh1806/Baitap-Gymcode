@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="init()">
+<form>
+    <img id="ball" src="../Session 2/61A5lkj1eXL._SX425_.jpg" height="440" width="425"/>
+    <p>Click button the image will move to right </p>
+    <input type="button" onclick="ball()" value="Click me!!"/>
+</form>
+
+<script>
+    let imgobj = null;
+    imgobj = document.getElementById("ball");
+    function init() {
+        imgobj= document.getElementById("ball");
+        imgobj.style.position="relative";
+        imgobj.style.left= "0px";
+    }
+    function ball() {
+        imgobj.style.left= parseInt(imgobj.style.left)+20 +"px";
+    }
+</script>
+</body>
+</html>

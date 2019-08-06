@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="click()">
+<h2>DO YOU MARRY ME??</h2>
+<button onclick="alert('I will marry you, you waitting me!!!')">Yes</button>
+<button onmouseover="no()" id="no" style="position: relative">No</button>
+
+<p id="hienthi"> </p>
+
+<script>
+    function no() {
+    let a=document.getElementById("no");
+    a.style.left=parseInt(Math.random()*window.innerWidth) +'px';
+    a.style.top=parseInt(Math.random()*window.innerHeight)+'px';
+    }
+
+    function click() {
+        window.addEventListener('click',no);
+    }
+</script>
+
+
+
+</body>
+</html>

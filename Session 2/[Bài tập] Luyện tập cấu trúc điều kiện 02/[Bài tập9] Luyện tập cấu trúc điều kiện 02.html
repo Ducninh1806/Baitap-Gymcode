@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+a,b,c > 0
+a + b > c
+b + c > a
+a + c > b <br>
+
+Cạnh a<input type="text" id="giatria"> <br>
+Cạnh b<input type="text" id="giatrib"> <br>
+Canh c<input type="text" id="giatric"> <br>
+<button type="button" onclick="kiemtra()">Kiểm tra</button>
+<p id="manhinh"></p>
+
+<script>
+    function kiemtra(){
+        let a = parseInt(document.getElementById("giatria").value);
+        let b = parseInt(document.getElementById("giatrib").value);
+        let c = parseInt(document.getElementById("giatric").value);
+
+        let tongab = a+b;
+        let tongbc = c+b;
+        let tongac = a+c;
+
+        if  (a>0 && b > 0 && c>0){
+            if (tongab>c && tongbc> a && tongac >b ) {
+                document.getElementById("manhinh").innerHTML="Các cạnh này tạo thành 1 tam giác";
+            }else {
+                document.getElementById("manhinh").innerHTML="Các cạnh này không tạo thành 1 tam giác";
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

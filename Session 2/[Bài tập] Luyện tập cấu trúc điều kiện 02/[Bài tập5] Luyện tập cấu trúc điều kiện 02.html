@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b. <br>
+
+Cạnh a:  <input id="canha" type="text">
+Cạnh b:  <input id="canhb" type="text">
+<button type="button" onclick="dientich()">Diện tích là</button>
+<p id="hienthi"></p>
+<script>
+    function dientich() {
+        let  a = document.getElementById("canha").value;
+        let  b = document.getElementById("canhb").value;
+        let dientich = a*b/2;
+        document.getElementById("hienthi").innerHTML="Diện tích tam giác vuống là: "+ dientich +"m2";
+    }
+</script>
+
+</body>
+</html>

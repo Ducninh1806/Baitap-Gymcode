@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng <br>
+Doanh số bán hàng
+<input type="text" id="doanhso">
+<button type="button" onclick="kiemtra()">Mức hoa hồng</button>
+<p id="hienthi"></p>
+<script>
+function kiemtra() {
+    let doanhso= parseInt(document.getElementById("doanhso").value);
+    if (doanhso <= 20000000) {
+        document.getElementById("hienthi").innerHTML="Hoa hồng nhận được 5% doanh thu";
+    }else if (doanhso < 100000000){
+        document.getElementById("hienthi").innerHTML="Hoa hồng nhận được 10% doanh thu";
+    }else if (doanhso >= 100000000 ) {
+        document.getElementById("hienthi").innerHTML="Hoa hồng nhận được 15% doanh thu";
+    }
+}
+
+
+
+</script>
+
+
+</body>
+</html>
