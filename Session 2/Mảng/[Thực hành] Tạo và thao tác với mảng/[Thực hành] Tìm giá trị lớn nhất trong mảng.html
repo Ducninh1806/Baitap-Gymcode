@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[0,3,5,2001,9,12,54,323,22,1000,56,8,89];
+    let max = a[0];
+    let index =0;
+
+    for (let i=1;i<a.length;i++ ){
+        if (max<a[i]){
+            max= a[i];
+            index=i;
+        }
+    }document.write("Max number is: "+ max+" and position index is" +index);
+
+
+</script>
+</body>
+</html>

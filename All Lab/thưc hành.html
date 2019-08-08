@@ -6,22 +6,33 @@
 </head>
 <body>
 <script>
-    let user = prompt('Username',"");
-    if (user === "Admin"){
-        let pass = prompt('Password',"");
-            if (pass === "TheMaster"){
-                alert("Welcome Master!!!");
-            } else if (pass === "Null"){
-                alert("Canceled");
-            }else if (pass === "") {
-                alert("I don't know you???")
-            }
+    let a= parseInt(prompt("hien thi cac nguyen to dau"));
+    let count = 2;
 
-    }else if (user === "Null"){
-        alert("Canceled");
-    }else {
-        alert("I don't know you");
+    if (a==1){
+        document.write("2");
+    }else if (a==2){
+        document.write("2 3 ");
+    } else {
+        document.write("2 3 ");
+        for (let i=4; ; i++){
+            let check =true;
+
+            for (let j=2; j<i;j++){
+            if (i%j==0) {
+                check=false;
+                break;
+            }
+            }
+            if (check){
+                document.write(i + " ");
+                count++;
+            }else if (count==a){
+                break;
+            }
+        }
     }
+
 </script>
 </body>
 </html>

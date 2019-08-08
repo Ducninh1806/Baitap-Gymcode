@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại có nằm trong mảng hay không. 
+Nếu có in ra vị trí của phần tử đó.-->
+
+
+
+<script>
+    let a = parseInt(prompt("Tìm giá trị trong mảng"));
+    let x = [3,6,9,13,25,5,64,86,234,986,234,56,234,6,11];
+    let index=0;
+
+    let check = false;
+    while (check===false) {
+        for (let i = 0; i < x.length; i++) {
+            if (a === x[i]) {
+
+                check = true;
+                index = i;
+                break;
+            }
+        }
+        if  (check){
+            alert("Số "+ a+ " nằm trong khoảng x và có độ dài là "+ index);
+            break;
+        }else {
+            a = parseInt(prompt("Tìm giá trị trong mảng"));
+        }
+
+    }
+
+
+
+    
+
+</script>
+</body>
+</html>

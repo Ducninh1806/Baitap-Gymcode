@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let number = parseInt(prompt("Hiển thị các số nguyên tố"));
+    let count = 2;
+
+    if (number == 1){
+        document.write("2");
+    }
+    else if (number == 2){
+        document.write("2 3 ");
+    }
+    else{
+        document.write("2 3 ");
+        for (let i = 4; ;i++){
+            let check = true;
+            for (let j=2; j<i;j++){
+                if(i%j==0) {
+                    check = false;
+                    break;
+                }
+            }if (check){
+                document.write(i + ' ');
+                count ++;
+            }if (count==number) {
+                break;
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

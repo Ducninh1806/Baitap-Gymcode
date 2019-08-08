@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="click()">
+<img id="ball" style="position: relative" src="../Session 2/ball.jpg" height="200" width="200"/>
+<br>
+<button onclick="left()">Left</button>
+<button onclick="right()">Right</button>
+<script>
+     let image = document.getElementById("ball");
+     function click() {
+         image = document.getElementById("ball");
+         image.style.left= "0px";
+     }
+     function right() {
+         image.style.left=parseInt(image.style.left)+5+"px";
+     }
+    function left() {
+        image.style.left= parseInt(image.style.left) - 5+"px";
+    }
+
+
+
+</script>
+</body>
+</html>

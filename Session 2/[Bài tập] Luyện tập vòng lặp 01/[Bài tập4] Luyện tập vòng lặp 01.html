@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
 
+<script>
+    let f1=1;
+    let f2=1;
+    let f3;
+    while (1){
+        f3=f2;
+        f2=f1+f2;
+        f1=f3;
+        if (f2 % 5 ==0){
+            break;
+        } document.write("Số đầu tiên trong dãy fibonacci chia hết cho 5" + f2)
+    }
+
+</script>
 </body>
 </html>
