@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+
+Fahrenheit <input type="text" id="input" oninput="addinput()"> conver to Celcius is <span id="display"></span>
+<script>
+    function expression(number) {
+        let celcius = (number-32)/1.8;
+        return celcius;
+    }
+    function addinput() {
+        let input = document.getElementById("input").value;
+        let result = expression(input);
+        document.getElementById("display").innerHTML= result ;
+    }
+</script>
+</body>
+</html>

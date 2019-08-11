@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button type="button" onclick="btnPlay()">Play!!!</button>
+<p id="hienthi"></p>
+<script>
+    let a=[];
+    function btnPlay(){
+        a= new Array(5);
+        for (let i=0; i<5; i++) {
+            a[i]=  Math.floor(Math.random()*45);
+        }document.getElementById("hienthi").innerHTML="Lấy 5 số tự nhiên từ 0-45 là: "+a;
+    }
+</script>
+
+</body>
+</html>

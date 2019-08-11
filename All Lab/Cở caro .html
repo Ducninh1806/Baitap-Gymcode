@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tic tac toe</title>
+</head>
+<body>
+
+<h3>[Bài tập] Tic tac toe </h3>
+<p id="tictactoe"></p>
+<input type="button" onclick="changevalue()" value="Change Value">
+
+<script>
+    let num= parseInt(prompt("Tổng các ô"));
+    let display = document.getElementById("tictactoe");
+
+    let broad=[] ;
+    let data="";
+    for (let i=0; i<num; i++){
+        broad[i]= new Array(num);
+        data += "<br>";
+        for (let j=0; j<num;j++){
+            broad[i][j]="*";
+            data += broad[i][j]+"&nbsp &nbsp &nbsp ";
+        }
+    }
+    display.innerHTML=data;
+
+    function changevalue() {
+            let play1x = parseInt(prompt("Play1 X: "));
+            let play1y = parseInt(prompt("play1 Y: "));
+            broad[play1x][play1y]="1";
+            data = "";
+            for (let i=0;i<num;i++){
+                data+= "<br>";
+                for (let j=0;j<num;j++){
+                    data += broad[i][j]+"&nbsp&nbsp&nbsp&nbsp";
+                }
+            }    display.innerHTML=data;
+
+
+            let play2x = parseInt(prompt("Play2 X: "));
+            let play2y = parseInt(prompt("Play2 Y: "));
+
+            broad[play2x][play2y]="2";
+            data = "";
+            for (let i=0;i<num;i++){
+                data+= "<br>";
+                for (let j=0;j<num;j++){
+                    data += broad[i][j]+"&nbsp&nbsp&nbsp&nbsp";
+                }
+            }    display.innerHTML=data;
+            check=true;
+
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

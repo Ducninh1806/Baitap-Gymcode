@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+
+
+English   <input id="english" type="text">
+<hr>
+<button type="button" onclick="result()">Translate</button><br>
+Tiếng Việt <input id="tiengviet" type="text">
+<script>
+
+    function result() {
+        let text = document.getElementById("english").value;
+        let tran = document.getElementById("tiengviet");
+        let english = ["one", 'two', 'three', 'four', 'five', 'six', 'seven', 'eight','nine', 'ten'];
+        let viet = ["số một", "số hai", 'số ba', 'số bốn', 'số năm', 'số sáu', 'số bảy', 'số tám', 'số chín', 'số mười' ];
+
+        let index=0;
+        let check=true;
+        for (let i=0;i<english.length;i++){
+            if (english[i] === text){
+                check=true;
+                index= i;
+                break;
+            } else {
+                check=false;
+            }
+        }
+        if (check){
+            tran.value=viet[index];
+        }
+        else {
+            tran.value= "sai"
+        }
+
+    }
+
+
+
+
+
+
+    // function result() {
+    //     let addtext = document.getElementById("english").value;
+    //     let tranviet    = document.getElementById("tiengviet");
+    //
+    //     let eng = ["one", 'two', 'three', 'four', 'five', 'six', 'seven', 'eight','nine', 'ten'];
+    //     let viet = ["số một", "số hai", 'số ba', 'số bốn', 'số năm', 'số sáu', 'số bảy', 'số tám', 'số chín', 'số mười' ];
+    //
+    //     for (let i=0;i<eng.length;i++){
+    //         if (eng[i] === addtext ) {
+    //             tranviet.value=viet[i];
+    //             break;
+    //         }
+    //     }
+    // }
+
+</script>
+</body>
+</html>/

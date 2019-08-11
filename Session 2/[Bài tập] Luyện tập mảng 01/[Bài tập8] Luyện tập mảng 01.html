@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập mảng 01</title>
+</head>
+<body>
+
+
+<script>
+//Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+
+
+let mang=new Array();
+    for (i=0;i<10;i++){
+        mang[i]=parseInt(prompt("Nhập 10 phần tử vào mảng"))
+    }
+    document.write("Mảng ban đầu là "+    mang);
+
+
+    for (i=0;i<mang.length-1;i++){
+        for (j=1;j<mang.length;j++){
+            if (mang[i]<mang[j]){
+                let min = mang[i];
+                    mang[i]=mang[j];
+                    mang[j]=min;
+            }
+        }
+    }
+
+document.write("<br>" + mang);
+
+
+
+</script>
+</body>
+</html>

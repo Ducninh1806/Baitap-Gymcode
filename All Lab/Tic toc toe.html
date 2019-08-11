@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tic toc toe</h3>
+<input id="tictoctoe"/>
+<button type="button" onclick="changevalue()">Change Value</button>
+<script>
+
+    let num = parseInt(prompt("Nhập số cột và hàng"));
+    let a= document.getElementById("tictoctoe");
+    let broad=[];
+    let data="";
+
+    for (let i=0; i<num;i++){
+        broad[i]= new Array();
+        data += "<br>";
+        for (let j=0;j<num;j++){
+            broad[i][j]=".";
+            data+= broad[i][j]+ "   ";
+        }
+    }
+    a.innerHTML=data;
+
+
+
+</script>
+</body>
+</html>

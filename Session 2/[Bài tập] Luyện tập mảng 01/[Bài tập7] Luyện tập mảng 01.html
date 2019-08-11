@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập mảng 01</title>
+</head>
+<body>
+
+
+<script>
+    //Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+
+    let mang=new Array();
+    let V = parseInt(prompt("Nhập vào 1 số nguyên"));
+
+    let check=false;
+    for (i=0;i<10;i++){
+        mang[i]=parseInt(prompt("Nhập 10 phần tử vào mảng"))
+    }
+    document.write("Mảng ban đầu là "+    mang);
+
+    for (i=0;i<10;i++)
+    {
+        if (mang[i] == V) {
+            document.write("<br>V is in the array");
+            check = true;
+
+        }
+        if (check){
+            mang[i] = mang[i + 1];
+        }
+        if (i == 9) {
+            mang[9] = 0;
+            break;
+        }
+    }
+    document.write("<br>Mạng sau khi sử lý "+mang.toString());
+    if (!check){
+        document.write("<br>V is not in the array");
+    }
+
+
+
+</script>
+</body>
+</html>

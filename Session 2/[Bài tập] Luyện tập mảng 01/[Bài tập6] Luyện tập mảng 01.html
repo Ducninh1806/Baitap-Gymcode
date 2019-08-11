@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập mảng 01</title>
+</head>
+<body>
+<script>
+//    Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+
+    let mang= new Array();
+    let kiemtra= parseInt(prompt("Nhập số nguyên bất kỳ"));
+    let check=true;
+    for (i=0;i<10;i++){
+        mang[i] = parseInt(prompt("nhập 10 số nguyên trong mảng"));
+    }
+
+    for (i=0;i<10;i++) {
+        if (kiemtra == mang[i]) {
+            check = true;
+            break;
+        }
+        }
+        if (check){
+            document.write(kiemtra + " is in the array");
+        }
+        else {
+            document.write(kiemtra + " isn't in the array");
+        }
+
+
+
+</script>
+</body>
+</html>
