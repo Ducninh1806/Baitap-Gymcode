@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="Click()" value="Play game!!!">
+
+<script>
+
+
+    // function Click() {
+    //     let a = parseInt(prompt("Nhập số khoảng từ: "));
+    //     let b = parseInt(prompt("Nhập số khoảng đến: "));
+    //
+    //     let c = parseInt(Math.floor(Math.random()*(b-a+1)+a));
+    //     let count=0;
+    //
+    //     while (count<3) {
+    //         let d = parseInt(prompt("Bạn đoán số mấy: "));
+    //
+    //         if (d==c){
+    //                 alert('Chúc mừng bạn đã đoán đúng!!!');
+    //                 break;
+    //             }
+    //              else if(d<c){
+    //                 alert( "Bạn đoán số lớn hơn so với số ngẫu nhiên: ");
+    //
+    //             }else {
+    //                 alert("Bạn đoán số nhỏ hơn so với số ngẫu nhiên: ");
+    //
+    //             }count++;
+    //         }
+    //     if (count==3) {
+    //         alert("Bạn đã đoán sai 3 lần")
+    // }}
+
+
+    // Cách 2
+
+    function Click() {
+        let a = parseInt(prompt("Nhập số khoảng từ: "));
+        let b = parseInt(prompt("Nhập số khoảng đến: "));
+        let c = parseInt(Math.floor(Math.random()*(b-a+1)+a));
+
+        for (let i=0;i<3;i++) {
+            let d = parseInt(prompt("Bạn đoán số mấy: "));
+
+            if (d == c) {
+                alert("CHúc mừng bạn đã đoán đúng!!!");
+                break;
+            } else if (d > c) {
+                alert("Bạn đã đoán lớn hơn số ngẫu nhiên");
+            } else {
+                alert("Bạn đã đoán nhỏ hơn số ngẫu nhiên");
+            }
+
+            }   alert("Bạn đã đoán quá 3 lần ");
+
+    }
+
+</script>
+</body>
+</html>

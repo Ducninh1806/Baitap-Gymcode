@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let mang=new Array();
+    let x=0;
+    let mangmoi= new Array();
+
+    for (i=0;i<10;i++){
+        mang[i]= parseInt(prompt("Nhập giá trị thứ "+(i+1)+ " trong mang"))
+    }
+
+
+    function isPrime(num) {
+        let check=true;
+        if (i<2){
+            check=false;
+        }
+
+        if  (num ==2){
+            index=2;
+            check=true;
+        }
+
+        else if  (num%2==0){
+            check=false;
+
+        }
+        else {
+            for (i = 0; i < num; i++) {
+                if (num % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+        }return check
+
+    }
+    for (i=0;i<mang.length;i++) {
+        if (isPrime(mang[i])==true){
+            mangmoi[x++]=mang[i];
+        }
+    }
+
+    document.write(mangmoi);
+
+
+
+</script>
+</body>
+</html>

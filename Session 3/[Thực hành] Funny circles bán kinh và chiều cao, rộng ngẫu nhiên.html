@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Funny circles</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border: 1px solid red"></canvas>
+
+<script>
+    function Circle(x,y,radius) {
+        this.x=x;
+        this.y=y;
+        this.radius=radius;
+    }
+    function getRamdomHex() {
+        return Math.floor(Math.random()*255);
+    }
+    function getRamdomColor() {
+        let red = getRamdomHex();
+        let blue = getRamdomHex();
+        let yallow= getRamdomHex();
+        return "rgb("+red+","+blue+","+yallow+")";
+    }
+
+    function creatCircle() {
+        let ctx= document.getElementById("myCanvas").getContext("2d");
+        let radius = Math.floor(Math.random()*80);
+        let color = getRamdomColor();
+        let x = Math.random()*window.innerWidth;
+        let y = Math.random()*window.innerHeight;
+        let circle= new Circle(x,y,radius);
+
+        ctx.beginPath();
+        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.fillStyle=color;
+        ctx.fill()
+    }
+    function mutiCircle() {
+        for (i=0;i<40;i++){
+            creatCircle();
+        }
+
+    }
+    mutiCircle();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+
+    let temperature = {
+        doC: "",
+        doF: function () {
+            let F= (1.8*doC)+32;
+            return F
+        },
+        doK: function () {
+            let K= doC+273.15;
+            return K
+        }
+    };
+
+    this.doC= parseInt(prompt("Nhập nhiệt độ: "));
+
+    document.write("Nhiệt độ Fahrenheit là: "+ temperature.doF()+ "</br>") ;
+
+    document.write("Nhiệt độ Kenvin là: "+ temperature.doK());
+
+
+
+</script>
+</body>
+</html>

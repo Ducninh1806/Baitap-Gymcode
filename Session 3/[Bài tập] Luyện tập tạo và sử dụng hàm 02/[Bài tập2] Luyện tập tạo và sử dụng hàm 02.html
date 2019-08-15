@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+
+Bán kính hình tròn <input id="nhapso" type="text" oninput="xuat()"> có diện tích là  <span id="hienthi1"></span> và có hình tròn là <span id="hienthi2"></span>
+
+
+<script>
+// Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+
+    function dientich(banhkinh) {
+        let dt = (banhkinh*banhkinh*Math.PI)/4;
+        return dt;
+    }
+    function chuvi(banhkinh) {
+        let cv = (banhkinh*Math.PI*2);
+        return cv;
+    }
+
+    function xuat() {
+        let nhap = document.getElementById('nhapso').value;
+        let dt= dientich(nhap);
+        let cv=chuvi(nhap);
+        document.getElementById("hienthi1").innerHTML=dt;
+        document.getElementById("hienthi2").innerHTML=cv;
+    }
+
+
+
+
+</script>
+</body>
+</html>

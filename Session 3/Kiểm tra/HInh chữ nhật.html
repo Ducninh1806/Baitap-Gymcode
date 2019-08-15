@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+<canvas id="hcn" height="300" width="300"></canvas>
+
+<br>
+Chiều rộng <input id="cr" oninput="display()" type="text">
+Chiều dài <input id="cd" oninput="display()" type="text">
+
+Diện tích là: <span id="dientich"></span>
+Chu vi là: <span id="chuvi"></span>
+
+
+<script>
+
+    let hinhchunhat = {
+        dientich: function (rong,dai) {
+            return rong*dai;
+        },
+        chuvi: function(rong,dai) {
+            return ((rong+dai)*2);
+        },
+        hinh: function (rong,dai) {
+            let ve= document.getElementById("hcn").getContext('2d');
+
+            ve.fillStyle= 'red';
+            ve.fillRect(0,0,rong,dai);
+            ve.stroke();
+        }
+    };
+
+
+
+     function thuchien() {
+         let chieudai= parseInt(document.getElementById("cd").value) ;
+         let chieurong= parseInt(document.getElementById("cr").value) ;
+
+         let dt= hinhchunhat.dientich(chieurong,chieudai);
+         let cv= hinhchunhat.chuvi(chieurong,chieudai);
+
+         document.getElementById("dientich").innerHTML=dt;
+         document.getElementById("chuvi").innerHTML= cv;
+         hinhchunhat.hinh(chieurong,chieudai);
+         return ;
+
+     };
+
+    function display() {
+        thuchien()
+    }
+
+</script>
+</body>
+</html>

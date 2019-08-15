@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hcn" ></canvas>
+<br>
+Chiều rộng <input id="cr" oninput="ketqua()" type="text">
+Chiều dài <input id="cd" oninput="ketqua()" type="text">
+
+Diện tích  <span id="dientich"></span>
+Chu vi  <span id="chuvi"></span>
+
+<script>
+    let hinhchunhat = {
+        dientich: function (rong, dai) {
+            return rong*dai;
+        },
+        chuvi: function (rong,dai) {
+            return ((rong+dai)*2);
+        },
+        hinhcn: function (rong,dai) {
+            let ve= document.getElementById('hcn').getContext("2d");
+
+            ve.fillStyle= "red";
+            ve.fillRect(0,0,rong,dai);
+            ve.fill();
+        },
+    };
+
+    function thuchien() {
+        let chieurong=parseInt(document.getElementById("cr").value) ;
+        let chieudai=parseInt(document.getElementById("cd").value) ;
+
+        let dt= hinhchunhat.dientich(chieurong,chieudai);
+        let cv= hinhchunhat.chuvi(chieurong,chieudai);
+
+        document.getElementById("dientich").innerHTML= dt;
+        document.getElementById("chuvi").innerHTML= cv;
+        hinhchunhat.hinhcn(chieurong,chieudai);
+    }
+
+    function ketqua() {
+        thuchien();
+    }
+
+
+</script>
+
+</body>
+</html>

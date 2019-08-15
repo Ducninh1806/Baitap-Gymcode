@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+
+Bình phương của <input id="nhapso" type="text" oninput="xuat()"> là <span id="hienthi"></span>
+
+
+<button type="button" onclick="click()">Bình phương</button>
+<script>
+// Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+
+    //     Cách 1
+    // function binhphuong(num) {
+    //     return num*num ;
+    // }
+    //
+    // let nhap = parseInt(prompt("nhập số tự nhiên"))
+    // let ketqua= binhphuong(nhap);
+    // alert("Kết quả bình phương của "+ nhap+ " là "+ ketqua);
+
+
+    Cách 2
+    function binhphuong(a) {
+        return a*a;
+    }
+    function xuat(){
+        let nhap= document.getElementById("nhapso").value;
+        let ketqua = binhphuong(nhap);
+        document.getElementById("hienthi").innerHTML=ketqua;
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

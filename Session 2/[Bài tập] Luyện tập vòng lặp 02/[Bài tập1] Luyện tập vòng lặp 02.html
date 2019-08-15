@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập1] Luyện tập vòng lặp 02</title>
+</head>
+<body>
+<script>
+    // Bài 1: In dãy Finonaci
+
+    let num= parseInt(prompt("Nhập tổng số bao nhiêu dãy fibonacci"));
+    let a1=1;
+    let a2=1;
+    let a3;
+    let count=2;
+    let check=true;
+    if (num==1){
+        document.write("1");
+        check = false;
+    }  else if (num ==2){
+        document.write("1 1 ");
+        check= false;
+    }   else if(num>=3){
+        document.write("1 1 ");
+        while (check) {
+            a3=a2;
+            a2=a1+a3;
+            a1=a2;
+            document.write(' '+a2);
+            count++
+            if  (count ==num){
+                check = false;
+            }
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>

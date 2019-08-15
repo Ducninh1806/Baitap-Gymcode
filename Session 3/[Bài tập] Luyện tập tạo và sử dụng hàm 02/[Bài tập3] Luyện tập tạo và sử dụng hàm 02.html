@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<script>
+//    Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    let count=1;
+    function giaithua(num) {
+        for (i=1;i<=num;i++) {
+            count *= i;
+
+        }  return count;
+    }
+    let songuyen= parseInt(prompt("Nhập số nguyên"));
+    let ketqua = giaithua(songuyen);
+    alert("Giai thừa của "+songuyen+" là "+ ketqua);
+
+
+</script>
+</body>
+</html>

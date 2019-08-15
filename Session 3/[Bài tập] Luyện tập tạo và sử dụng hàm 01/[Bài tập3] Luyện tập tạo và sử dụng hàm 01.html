@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+// Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+// Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+
+    // function sosanh1(num1, num2) {
+    //     if (num1>num2) {
+    //         return alert("Giá trị 1 lớn hơn giá trị 2");
+    //     }
+    // }
+    // function sosanh2(num1, num2) {
+    //     if (num1<=num2) {
+    //         return num1+num2;
+    //     }
+    // }
+    // let a= parseInt(prompt("Giá trị 1: "));
+    // let b= parseInt(prompt("Giá trị 2: "));
+    // let c= sosanh1(a,b);
+    // let d= sosanh2(a,b);
+    // alert("Tổng 2 giá trị: " +d)
+
+    function sosanh(num1, num2) {
+        if (num1 > num2) {
+            return alert("Giá trị 1 lớn hơn giá trị 2");
+        }
+        if (num1 <= num2) {
+            return alert("Tổng 2 giá trị: "+ (num1 + num2)) ;
+        }
+    }
+    let a= parseInt(prompt("Giá trị 1: "));
+    let b= parseInt(prompt("Giá trị 2: "));
+    let c= sosanh(a,b);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hcn" height="" width=""></canvas>
+
+<script>
+    let hinhchunnhat = {
+        chieudai: "",
+        chieurong: "",
+        dientich: function () {
+            return document.write("<br>"+"Diện tích hình chữ nhật là: "+ (chieudai*chieurong))
+        },
+        chuvi: function () {
+            return document.write("<br>"+"Chu vi hình chữ nhật là: "+( chieudai + chieurong )*2)
+        },
+        hcn: function () {
+            document.getElementById("hcn").style.height=chieudai;
+            document.getElementById("hcn").style.width=chieurong;
+
+            let ctx=document.getElementById("hcn").getContext('2d');
+            ctx.fillStyle= "red";
+            ctx.fillRect(0,0,chieurong,chieudai);
+        }
+    };
+    this.chieudai= parseInt(prompt("Nhập chiều dài hình chữ nhật"));
+    this.chieurong= parseInt(prompt("Nhập chiều rộng hình chữ nhật"));
+    hinhchunnhat.dientich();
+    hinhchunnhat.chuvi();
+    hinhchunnhat.hcn();
+
+
+</script>
+
+
+</body>
+</html>

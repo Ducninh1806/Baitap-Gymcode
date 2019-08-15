@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    // Bài 1: Viết hàm isPrime() kiểm tra 1 số có phải là số nguyên tố hay không.
+    //Đầu vào là một số nguyên và đầu ra là 1 giá trị kiểu boolean (Nếu số nguyên là số nguyên tố thì kết quả là true, ngược lại là false).
+
+    let num= parseInt(prompt("Nhập 1 số nguyên"));
+    let check=true;
+    if (num==2){
+        alert("2 là số nguyên tố");
+        check=false;
+    }
+    if (num==3){
+        alert("3 là số nguyên tố");
+        check=false;
+    }
+    if (num>3){
+        for (i=4;i<Math.sqrt(num);i++){
+            if (num%2==0||num%3==0||num%5==0||num%7==0) {
+                check=false;
+            }
+        }
+    }
+    if (check){
+        alert(num + " là số nguyên tố không: False")
+    } else {
+        alert(num+ " là số nguyên tố không: True")
+    }
+
+</script>
+</body>
+</html>
