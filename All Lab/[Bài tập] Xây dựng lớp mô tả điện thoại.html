@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+
+<SCRIPT>
+    let ON = true;
+    let OFF = false;
+
+    function mobile() {
+        this.battery= 100;
+        this.draft=[];
+        this.inbox=[];
+        this.sent=[];
+
+        this.isON = ON;
+
+        this.getstatus = function () {
+           return this.isON === On && this.battery>0;
+        };
+
+        this.setPower = function () {
+            this.isON = !this.isON
+        };
+
+        this.increaseBatery= function () {
+            if (this.battery<100) {
+                this.battery++
+            }
+        }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+</SCRIPT>
+
+</body>
+</html>

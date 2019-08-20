@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất</title>
+</head>
+<body>
+
+<script>
+    let mang = new Array();
+    for (let i=0; i<10; i++){
+        mang[i]= parseInt(prompt("Nhập giá trị "+ (i+1)+ " trong mảng "));
+    }
+
+    let index= 0;
+    let max= mang[0];
+    for (let i=1;i<mang.length;i++){
+        if (max < mang[i]){
+            max = mang[i];
+            index=i
+        }
+    }
+
+    alert("Giá trị lớn nhất trong mảng là "+ max+ " và đứng ở vị trí " +index+ " trong mảng")
+
+
+
+
+</script>
+
+</body>
+</html>

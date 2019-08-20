@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+
+<input id="nhapso" type="text">
+<label></label>
+    <select id="feet" >
+        <option value="Feets" >Feet</option>
+        <option value="Meters">Meters</option>
+    </select>
+</label>
+<label>
+    <select id="meters">
+        <option value="Feets">Feet</option>
+        <option value="Meters">Meters</option>
+    </select>
+</label>
+<button type="button" onclick="ketqua">Kết quả</button>
+<p id="hienthi"></p>
+
+<script>
+    let nhapso = document.getElementById("nhapso");
+    let feets = document.getElementById("feet");
+    let meters= document.getElementById("meters");
+    let hienthi=  document.getElementById("hienthi").innerHTML;
+    function ketqua() {
+         if (feets === "Meters"&& meters==="Feets"){
+                hienthi= 3.279 * nhapso;
+         }
+         if (meters === "Feets"&& feets==="Meters"){
+                hienthi= 0.305 * nhapso;}
+         if (feets==="Feets"&&meters=== "Meters"||feets==="Meters"&&meters=== "Feets" ){
+                hienthi = nhapso;}
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
