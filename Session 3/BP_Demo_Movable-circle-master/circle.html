@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Demo] Movable circle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="700" height="500" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+
+    function Circle(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+
+        this.dx = 10;
+        this.dy = 10;
+
+        this.moveX = function() {
+            this.x += this.dx;
+        };
+
+        this.moveY = function () {
+            this.y += this.dy;
+        };
+
+        this.move = function () {
+            this.moveX();
+            this.moveY();
+        }
+    }
+
+    function getRandomHex() {
+        return Math.floor(Math.random() * 255);
+    }
+
+    function getRandomColor() {
+        let red = getRandomHex();
+        let green = getRandomHex();
+        let blue = getRandomHex();
+        return "rgb(" + red + "," + blue + "," + green + ")";
+    }
+
+    let radius = Math.random() * 80;
+    let color = getRandomColor();
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    let circle = new Circle(x, y, radius);
+
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+
+    setInterval(function () {
+
+        // xoá màn hình cũ
+        ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
+
+        if (circle.x <= 0 + circle.radius || circle.x >= canvas.offsetWidth - circle.radius) {
+            circle.dx = -circle.dx;
+        }
+
+        if (circle.y <= 0 + circle.radius || circle.y >= canvas.offsetHeight - circle.radius) {
+            circle.dy = -circle.dy;
+        }
+
+        circle.move();
+
+        // vẽ lại màn hình
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = color;
+        ctx.fill();
+
+    }, 50);
+
+</script>
+</body>
+</html>

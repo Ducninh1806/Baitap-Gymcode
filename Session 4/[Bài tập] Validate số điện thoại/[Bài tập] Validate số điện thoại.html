@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Viết phương thức để kiểm tra tính hợp lệ của số điên thoại.
+
+Số điện thoại hợp lệ cần đạt theo mẫu sau: (xx)-(0xxxxxxxxx)
+
+x là ký tự số
+
+Không chứa các ký tự đặc biệt
+
+Ví dụ số điện thoại hợp lệ: (84)-(0978489648)
+
+Ví dụ tên lớp không hợp lệ: (a8)-(22222222)
+
+<input id="input" oninput="text()"><span id="hienthi"></span>
+
+<script>
+    function text(){
+        let text= document.getElementById("input").value;
+        let regexp= /^[0-9]{2}(?:-[0-9]{10})?$/;
+        if (regexp.test(text)) {
+            document.getElementById("hienthi").innerHTML="OK"
+        }else {
+            document.getElementById("hienthi").innerHTML="NOK"
+
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

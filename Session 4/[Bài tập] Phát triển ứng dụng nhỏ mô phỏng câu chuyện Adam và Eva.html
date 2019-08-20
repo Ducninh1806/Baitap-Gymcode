@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    let Apple = function () {
+        this.weight = 10;
+        this.getWeight=function () {
+            return this.weight;
+
+        };
+        this.decrease = function () {
+            if (this.weight>0){
+               return this.weight--;
+            }
+        };
+        this.isEmpty = function () {
+            if (this.weight==0){
+                return true
+            } else {
+                return false
+            }
+        };
+        
+    };
+
+    let Human= function (name, gender, weight) {
+        this.name = name;
+        this.isMale= gender;
+        this.weight= weight;
+
+        this.checkApple=function (quatao) {
+            if (quatao.isEmpty()){
+                return false;
+            }else {
+                return true;
+            }
+
+        }
+
+        this.eat= function (quatao) {
+            if (this.checkApple(quatao)){
+                quatao.decrease();
+                this.weight ++;
+            }
+        }
+    }
+
+    let apple= new Apple(10);
+    let human= new Human("Duc", "Male", 53);
+    human.checkApple(apple);
+         console.log(human.name);
+         console.log(human.isMale);
+         console.log(human.weight);
+         console.log(human.eat(apple));
+         console.log(human.weight);
+         console.log(apple.getWeight());
+
+
+
+
+</script>
+</body>
+</html>

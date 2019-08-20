@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hinhtron" height="500" width="700" style="border: 1px solid red"></canvas>
+<script>
+    let Circle = function (x,y,radius) {
+        this.x=x;
+        this.y=y;
+        this.radius=radius;
+        
+        this.dx=10;
+        this.dy=10;
+        
+        this.moveX =function () {
+            this.x+= this.dx;
+        };
+        
+        this.moveY=function () {
+            this.y+= this.dx;
+        };
+        
+        this.move= function () {
+            this.moveX();
+            this.moveY();
+        };
+        
+    };
+
+    function getRandomHex() {
+        return Math.floor(Math.random()*255);
+    }
+
+    function getRandomColor() {
+        let red= getRandomHex();
+        let yellow = getRandomHex();
+        let blue = getRandomHex();
+            return "rgb("+red+","+yellow+","+blue+")";
+    }
+
+    let canvas= document.getElementById("hinhtron");
+    let ve= canvas.getContext("2d");
+
+    let x= Math.random()*window.innerWidth;
+    let y= Math.random()*window.innerHeight;
+    let radius= Math.floor(Math.random()*80);
+    let color= getRandomColor();
+    let circle= new Circle(x,y,radius);
+
+
+    setInterval(function ()  {
+
+
+
+        // xoa man hinh
+        ve.clearRect(0,0,canvas.offsetWidth,canvas.offsetHeight);
+        
+        
+        if (circle.x<= 0+circle.radius|| circle.x >=canvas.offsetWidth-circle.radius) {
+            circle.dx= - circle.dx;
+        }
+        
+        if (circle.y<= 0- circle.radius|| circle.y<=canvas.offsetHeight+ circle.radius) {
+            circle.dy= - circle.dy;
+        }
+
+        circle.move();
+
+        ve.beginPath();
+        ve.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ve.fillStyle= color;
+        ve.fill();
+
+    },50);
+
+    //setInterval(creatCircle(),100)
+
+
+
+</script>
+
+</body>
+</html>

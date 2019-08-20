@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<canvas id="myCanvas" height="500" width="400" style="border: 1px solid cornflowerblue"></canvas>
+
+<img id="xedua" src="Xedua.png" height="132" width="70" style="display: block" />
+
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let context = canvas.getContext("2d");
+    let pictureCar= document.getElementById("xedua");
+
+    let getPic = {
+        x: canvas.width/2 - pictureCar.width/2,
+        y: canvas.height - pictureCar.height,
+        speed: 10,
+        isMoveLeft: false,
+        isMoveRight: false,
+    };
+
+    let ball ={
+        x: Math.floor(Math.random()* canvas.width),
+        y: 0,
+        radius: 30,
+        dx: 10,
+        dy: 10,
+    };
+
+    let isGameOver = false;
+
+    document.addEventListener("keyup", function (event) {
+        if  (event.keyCode ==37){
+            getPic.isMoveLeft = false;
+        }else if  (event.keyCode ==39){
+            getPic.isMoveRight = false;
+        }
+    });
+    document.addEventListener("keydown", function (event) {
+        if  (event.keyCode ==37){
+            getPic.isMoveLeft = true;
+        }else if  (event.keyCode ==39){
+            getPic.isMoveRight = true;
+        }
+    });
+
+
+    function creatBall(){
+            context.beginPath();
+            context.arc(ball.x, ball.y, ball.radius, 0, 2 * Math.PI);
+            context.fillStyle = "red";
+            context.fill();
+            context.closePath();
+    }
+
+    function handlingMoveCar() {
+        if  (getPic.isMoveLeft){
+            getPic.x -= getPic.speed;
+        }else if  (getPic.isMoveRight){
+            getPic.x += getPic.speed;
+        }
+        if (getPic.x <= 0){
+            getPic.x = 0;
+        }
+        else if (getPic.x >= canvas.width - pictureCar.width) {
+            getPic.x = canvas.width -  pictureCar.width;
+        }
+    }
+
+    function handlingMoveBallGoDown(){
+        ball.y += ball.dy;
+    }
+
+        function HandlingBallHitCar() {
+            if (ball.x - ball.radius >= getPic.x && ball.x+ ball.radius <= getPic.x +  pictureCar.width &&
+                ball.y + ball.radius >=  getPic.y && ball.y - ball.radius<= getPic.y + pictureCar.height){
+                isGameOver =true;
+            }
+        }
+
+
+    // function HandlingBallMoveContinuity() { // làm thế nào để cho đường tròn liên tục chạy
+    //     do  {
+    //         creatBall();
+    //     }while (ball.y - ball.radius > canvas.height)
+    // }
+
+    function draw() {
+        if (!isGameOver) {
+            context.clearRect(0,0, canvas.width, canvas.height);
+
+            context.drawImage(pictureCar,getPic.x,getPic.y);
+
+            creatBall();
+            
+            handlingMoveBallGoDown();
+
+            handlingMoveCar();
+
+            // HandlingBallMoveContinuity();
+
+            HandlingBallHitCar();
+
+            requestAnimationFrame(draw);
+        } else {
+            alert('GameOver')
+        }
+
+    }
+
+    draw();
+
+</script>
+</body>
+</html>

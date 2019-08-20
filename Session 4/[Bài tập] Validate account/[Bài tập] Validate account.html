@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Một tài khoản hợp lệ cần đạt các yêu cầu sau:
+
+Không chứa các ký tự đặc biệt
+Ít nhất là 6 ký tự
+Không chứa các ký tự viết hoa
+Cho phép dấu gạch dưới (_)<br>
+
+<input id="text" type="text" oninput="test()">
+<span id="display"></span>
+
+<script>
+
+
+    function test(){
+        let text = document.getElementById("text").value;
+        let regexp= /^[_ a-z0-9]{6,}$/;
+        if  (regexp.test(text)){
+            return document.getElementById("display").innerHTML= "True";
+        }else {
+            return document.getElementById("display").innerHTML= "False";
+        }
+    }
+
+
+</script>
+</body>
+</html>

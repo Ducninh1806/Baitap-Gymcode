@@ -2,33 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+    <title>Title</title>
 </head>
 <body>
 
-<script>
-    let mobie= {
-        pin: 100,
-        soanthao: function () {
-            
-        },
-        thuden: function () {
-
-        },
-        thugui: function () {
-            
+    <script>
+    function Mobile(cents) {
+        if (cents < 0 || cents > 100) {
+            throw new Error("Invalid cents value: " + cents);
         }
+        this.cents = cents;
+        this.contextMess = '';
+        this.receiveBox = '';
+        this.outBox = '';
+        this.isOn = true;
+        this.typingMess = function (str) {
+            if (!this.isOn) {
+                return
+            } else {
+                return this.contextMess += str;
+                this.consume();
+            }
 
+        }
+        this.receiveMess = function (contextMess) {
+            if (!this.isOn) {
+                return
+            } else {
+                this.receiveBox += contextMess;
+                this.consume();
+            }
 
+        }
+        this.sendMess = function (otherPhone) {
+            if (!this.isOn) {
+                return
+            } else {
+                otherPhone.receiveMess(this.contextMess);
+                this.outBox = this.contextMess;
+                this.contextMess = "";
+                this.consume();
+            }
 
-
-
-
-
-
-
-
+        }
+        this.turnOnOff = function () {
+            return this.isOn = !this.isOn;
+        }
+        this.charge = function (time) {
+            if (this.cents < 100) {
+                return this.cent += time;
+            }
+        }
+        this.consume = function () {
+            this.cents -= 1;
+        }
     }
+    var nokia = new Mobile(50);
+    var iphone = new Mobile(47);
+    console.log(nokia, iphone);// before
+    nokia.typingMess('sent message from nokia to iphone');
+    nokia.sendMess(iphone);
+    nokia.outBox;
+    console.log(nokia, iphone);// after
 </script>
+
 </body>
 </html>
