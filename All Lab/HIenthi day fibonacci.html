@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let num = parseInt(prompt("Hiển thị bao nhiêu số trong dẫy fibonacci"));
+    let count=2;
+    let a1=1;
+    let a2=1;
+    let a3;
+
+    check=true;
+    if (num==1){
+        document.write("dãy fibonacci là: "+ a1);
+        check=false;
+    }
+    else if (num==2){
+        document.write("dãy fibonacci là "+ a1+" "+a2);
+        check=false;
+    }
+    else {
+        document.write("dãy fibonacci là "+ a1+" "+a2);
+            while (check){
+                a3=a2;
+                a2=a1+a2;
+                a1=a3;
+                document.write(" "+a2);
+                count++;
+                if (count==num){
+                    check=false;
+                }
+            }
+    }
+
+
+
+</script>
+
 </body>
 </html>

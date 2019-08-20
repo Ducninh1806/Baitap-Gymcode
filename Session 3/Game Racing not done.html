@@ -29,6 +29,7 @@
         radius: 30,
         dx: 10,
         dy: 10,
+        bottomEdge: 0
     };
 
     let isGameOver = false;
@@ -50,6 +51,7 @@
 
 
     function creatBall(){
+            ball.bottomEdge = canvas.height + ball.radius * 2;
             context.beginPath();
             context.arc(ball.x, ball.y, ball.radius, 0, 2 * Math.PI);
             context.fillStyle = "red";
@@ -71,8 +73,13 @@
         }
     }
 
+
     function handlingMoveBallGoDown(){
-        ball.y += ball.dy;
+         if ( ball.y> ball.bottomEdge ) {
+              ball.y = 0
+         } else {
+            ball.y += ball.dy;
+         }
     }
 
         function HandlingBallHitCar() {
@@ -83,11 +90,7 @@
         }
 
 
-    // function HandlingBallMoveContinuity() { // làm thế nào để cho đường tròn liên tục chạy
-    //     do  {
-    //         creatBall();
-    //     }while (ball.y - ball.radius > canvas.height)
-    // }
+
 
     function draw() {
         if (!isGameOver) {
@@ -100,8 +103,6 @@
             handlingMoveBallGoDown();
 
             handlingMoveCar();
-
-            // HandlingBallMoveContinuity();
 
             HandlingBallHitCar();
 

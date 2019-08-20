@@ -2,9 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<canvas id="myCanvas" height="500" width="700" style="border: 1px solid cadetblue"></canvas>
+<script>
+    let canvas= document.getElementById("myCanvas");
+    let context= canvas.getContext("2d");
+
+    let x= 20,y=20;
+    let radius=20;
+    let dx=3,dy=3;
+
+    let paddle={
+        width: 100,
+        height: 10,
+        x: 0,
+        y: canvas.height-10,
+        speed : 10,
+        isMoveLeft: false,
+        isMoveRight: false,
+    };
+
+    let isGameOver= false;
+
+    function drawBrick() {
+        for (i=0;i<3;i++) {
+            for (j=0;j<8;j++){
+                context.beginPath();
+                context.rect(
+                    30+j*(72+25),
+                    30+i*(15+25),
+                    70,
+                    15
+                )
+                context.fillStyle= "yellow",
+                context.fill();
+                context.closePath();
+            }
+        }
+
+    }
+
+    function drawCircle(){
+        context.beginPath();
+        context.arc(x,y,radius,0,2*Math.PI);
+        context.fillStyle="red";
+        context.fill();
+        context.closePath();
+    }
+
+    function hitCanvas() {
+        if (x<radius ||x>canvas.width -radius ){
+            dx=-dx;
+        }
+        if (y<radius ){
+            dy=-dy;
+        }
+    }
+
+    function changeDirection() {
+        x+=dx;
+        y+=dy;
+    }
+
+    function barrierBar() {
+        context.beginPath();
+        context.rect(paddle.x,paddle.y,paddle.width,paddle.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    // document.addEventListener("keypress",function (even) {
+    //     console.log(even)
+    // });
+
+    document.addEventListener("keyup",function (event) {
+        console.log("KEY UP");
+        console.log(event);
+
+        if (event.keyCode == 37){
+            paddle.isMoveLeft= false;
+        }else if (event.keyCode == 39){
+            paddle.isMoveright= false;
+        }
+    });
+    document.addEventListener("keydown",function (event) {
+        console.log("KEY DOWN");
+        console.log(event);
+
+        if (event.keyCode == 37){
+            paddle.isMoveLeft= true;
+        }else if (event.keyCode == 39){
+            paddle.isMoveright= true;
+        }
+    });
+
+
+    function HandingPaddle() {
+        if (x+radius>= paddle.x && x+radius<=paddle.x+paddle.width&& y+radius>= canvas.height-paddle.height) {
+            dy=-dy;
+        }
+    }
+
+    function updatepPaddlePossion() {
+        if  (paddle.isMoveLeft ){
+            paddle.x -= paddle.speed;
+        }else if (paddle.isMoveright){
+            paddle.x += paddle.speed
+        }
+        if (paddle.x<0) {
+            paddle.x= 0;
+        }else if (paddle.x > canvas.width-paddle.width){
+            paddle.x= (canvas.width - paddle.width);
+        }
+    }
+
+    function checkGameOver() {
+        if (y>canvas.height -radius){
+            isGameOver =true;
+        }
+    }
+
+    function draw(){
+            if (!isGameOver){
+
+                context.clearRect(0,0,canvas.width,canvas.height);          //xoa man hinh
+
+                drawCircle(); // hàm hình tròn
+                barrierBar(); // thanh ngang
+
+                updatepPaddlePossion()
+
+                hitCanvas(); //hàm va chạm vào canvas
+
+                HandingPaddle();
+
+                drawBrick()
+
+                changeDirection(); // hàm đổi hướng di chuyển
+
+                checkGameOver();
+
+                requestAnimationFrame(draw);
+            }
+            else {
+                console.log("Game Over");
+                alert("Game Over")
+            }
+    }
+
+    draw();
+
+
+
+</script>
 </body>
 </html>

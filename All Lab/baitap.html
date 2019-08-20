@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        canvas{
+            border: 1px solid yellow;
+        }
+
+
+    </style>
 </head>
 <body>
-$END$
+    <canvas id="myCanvas" height="300" width="300" >
+    </canvas>
+
+<script>
+
+
+    let canvas=document.getElementById("myCanvas");
+    let context= canvas.getContext("2d");
+
+
+    function Circle(x,y,radius) {
+        this.x= x;
+        this.y= y;
+        this.radius=radius;
+
+        this.dx=10;
+        this.dy=10;
+
+        this.moveX=function () {
+            this.x += this.dx;
+        };
+        this.moveY= function () {
+            this.y += this.dy;
+        };
+
+        this.move=function () {
+            this.moveX();
+            this.moveY();
+        }
+    }
+
+
+
+    let radius= 20;
+    let x= 175;
+    let y= 285;
+    let circle = new Circle(x,y,radius);
+
+    function diChuyen(){
+        if (circle.x <= 0 + circle.radius || circle.x >= canvas.offsetWidth-circle.radius){
+            circle.dx= - circle.dx;
+        }
+        if (circle.y  <=  0 - circle.radius || circle.y >= canvas.offsetHeight-circle.radius){
+            circle.dy= - circle.dy;
+        }
+    }
+
+    function hinhTron () {
+        context.beginPath();
+        context.arc(circle.x,circle.y,radius,0,2*Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function hinhChuNhat (){
+        context.beginPath();
+        context.rect(150,285,80,10);
+        context.fillStyle = "blue";
+        context.fill();
+        context.closePath();
+    }
+        
+    document.addEventListener("keydown",function (event) {
+            if (event ==37){
+                  event.x -= 5       ;
+            }   else if (event ==39)  {
+                  event.x += 5       ;
+            }
+            return barrierBar()
+    })
+
+
+    setInterval(function () {
+        // xoa man hinh
+        context.clearRect(0,0,canvas.offsetWidth,canvas.offsetHeight);
+
+        // di chuyen
+       diChuyen();
+
+        circle.move();
+
+        //Ve hinh tron
+        hinhTron();
+
+        // hinh chu nhat
+        hinhChuNhat();
+
+    },50);
+
+
+
+
+
+
+</script>
+
 </body>
 </html>

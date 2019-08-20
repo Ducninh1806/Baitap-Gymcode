@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<canvas id="hinhtron" height="400" width="400"></canvas>
+<script>
+    function Circle(x,y,radius) {
+        this.x =x,
+        this.y =y,
+        this.radius =radius
+
+    }
+
+    function getRandomHex() {
+        return Math.floor(Math.random()*255);
+    }
+
+    function getRamdomColor() {
+        let red= getRandomHex();
+        let yellow = getRandomHex();
+        let blue = getRandomHex();
+            return "rgb("+red+","+yellow+","+blue+")";
+    }
+
+    function creatCircle() {
+        let ve= document.getElementById("hinhtron").getContext("2d");
+        let radius= Math.floor(Math.random()*80);
+        let x = Math.random()*window.innerWidth;
+        let y =Math.random()*window.innerHeight;
+        let color= getRamdomColor();
+        let circle= new Circle(x,y,radius);
+
+        ve.beginPath();
+        ve.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ve.fillStyle=color;
+        ve.fill();
+
+
+    }
+
+    function MutilCircle() {
+        for (i=0;i<40;i++){
+            creatCircle()
+        }
+    }
+
+    MutilCircle()
+
+
+</script>
 </body>
 </html>
