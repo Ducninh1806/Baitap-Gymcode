@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Làm việc với các đối tượng thông dụng</title>
+</head>
+<body>
+<script>
+
+    //Bước 1: Cho sẵn chuỗi như sau: "Tôi yêu ngôn ngữ lập trình Javascript".
+
+    //    Hãy đếm số lần xuất hiện của chữ 'a' ở trong chuỗi trên
+
+    let toiyeu= "Tôi yêu ngôn ngữ lập trình Javascript";
+    let index=0;
+    let a=['a'];
+      function ss(n){
+          for (i=0;i<n.length;i++){
+              if    (a.indexOf(n[i])!==-1){
+                  index++;
+              }
+          } return index;
+
+      }
+    document.write(ss("Số chữ 'a' xuất hiện trong mảng là: "+toiyeu)+ "<br>");
+
+    let mang= [];
+      mang.push(toiyeu.split(" "));
+     document.write("Chuỗi của mảng là: "+mang +"<br>");
+     document.write("Số lượng từ trong mảng là : "+ mang.length+"<br>")
+
+    document.write(toiyeu.replace("Javascript","Typescript"))
+
+
+</script>
+</body>
+</html>

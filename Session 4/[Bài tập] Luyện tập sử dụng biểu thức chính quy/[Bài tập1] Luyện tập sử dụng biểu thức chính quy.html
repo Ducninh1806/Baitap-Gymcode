@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập sử dụng biểu thức chính quy</title>
+</head>
+<body>
+Bài 1: Kiểm tra chuỗi đưa vào có đúng dạng dd/mm/yyyy
+
+<script>
+
+    // regexp = /\b(\d{0,2})\/(\d{0,2})\/(\d{2}|\d{4})$/
+    regexp = /^[(0)0-9]{0,1}.\/[(0)0-9]{0,1}.\/[0-9]{4}$/;
+    function day(day) {
+        regexp = /^\b(\d{0,2})\/(\d{0,2})\/(\d{2}|\d{4})$/;
+        if (regexp.test(day)) {
+            console.log("OK")
+        }
+        else {
+            console.log("NOK")
+        }
+
+    }
+    day("03/12/2129")
+
+
+
+</script>
+</body>
+</html>

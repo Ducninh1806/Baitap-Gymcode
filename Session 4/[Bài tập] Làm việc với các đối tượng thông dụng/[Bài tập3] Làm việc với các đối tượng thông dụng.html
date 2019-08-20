@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Làm việc với các đối tượng thông dụng</title>
+</head>
+<body>
+
+Bước 3: Hiển thị thời gian mà bạn đã sống dưới nhiều đơn vị khác nhau:
+
+Tôi đã sống 24 năm.
+
+Tôi đã sống 288 tháng.
+
+Tôi đã sống 8640 ngày.
+
+Tôi đã sống 307360 giờ.
+
+Tôi đã sống 12441600 phút.
+
+Tôi đã sống 746496000 giây
+<script>
+
+    let mydate= new Date(1992,6,18,17);
+    let day= new Date();
+    console.log(mydate)
+    document.write("Tôi đã sống "+ (day.getYear()- mydate.getYear())+ " năm."+"<br>");
+    document.write("Tôi đã sống "+ (12*day.getYear()- 12*mydate.getYear())+ " tháng."+"<br>");
+    document.write("Tôi đã sống "+ (31*12*day.getYear()- 31*12*mydate.getYear())+ " đây."+"<br>");
+    document.write("Tôi đã sống "+ (60*31*12*day.getYear()- 60*31*12*mydate.getYear())+ " giờ."+"<br>");
+    document.write("Tôi đã sống "+ (60*60*31*12*day.getYear()- 60*60*31*12*mydate.getYear())+ " phút."+"<br>");
+    document.write("Tôi đã sống "+ (60*60*60*31*12*day.getYear()- 60*60*60*31*12*mydate.getYear())+ " giây."+"<br>");
+
+
+
+</script>
+</body>
+</html>

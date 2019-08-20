@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập sử dụng biểu thức chính quy</title>
+</head>
+<body>
+Bài 3: Đếm số nguyên âm/phụ âm trong một chuỗi
+
+<script>
+    let array= "Toi yeu Viet Nam";
+    let vowel= ["u", 'e' , 'o', 'a', "i"];
+    index =0;
+
+    function compare(n) {
+        for (i=0; i<n.length;i++){
+           if (vowel.indexOf(n[i])!==-1){
+               index++;
+           }
+        } return index;
+    }
+
+    document.write(compare(array))
+
+
+
+</script>
+</body>
+</html>

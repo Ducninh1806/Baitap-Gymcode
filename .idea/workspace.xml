@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060f6c76-3dce-463c-89d6-b97e9e2a6cdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/All Lab/[Bài tập] Xây dựng lớp mô tả điện thoại.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session 3/[Bài tập] Chuyển đổi giữa feet và meters/[Bài tập] Chuyển đổi giữa feet và meters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị lớn nhất.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị nhỏ nhất.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập1] Luyện tập sử dụng biểu thức chính quy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập2] Luyện tập sử dụng biểu thức chính quy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập3] Luyện tập sử dụng biểu thức chính quy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập4] Luyện tập sử dụng biểu thức chính quy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập10] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập1] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập2] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập3] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập4] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập5] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập6] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập7] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập8] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập9] Làm việc với các đối tượng thông dụng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,10 +37,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/All Lab/[Bài tập] Xây dựng lớp mô tả điện thoại.html">
+        <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập7] Làm việc với các đối tượng thông dụng.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="329">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập2] Luyện tập sử dụng biểu thức chính quy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -50,19 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Luyện tập tạo và sử dụng hàm 02/[Bài tập6] Luyện tập tạo và sử dụng hàm 02.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Luyện tập tạo và sử dụng hàm 02/[Bài tập7] Luyện tập tạo và sử dụng hàm 02.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Luyện tập tạo và sử dụng hàm 02/[Bài tập8] Luyện tập tạo và sử dụng hàm 02.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Luyện tập tạo và sử dụng hàm 02/[Bài tập9] Luyện tập tạo và sử dụng hàm 02.html" />
-        <option value="$PROJECT_DIR$/All Lab/[Bài đọc] Vẽ trên Canvas.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Xây dựng lớp mô tả Temperature.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Thực hành] Funny circles.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Bài tập] Xây dựng lớp mô tả hình chữ nhật.html" />
-        <option value="$PROJECT_DIR$/Session 3/[Thực hành] Funny circles bán kinh và chiều cao, rộng ngẫu nhiên.html" />
-        <option value="$PROJECT_DIR$/Session 3/Kiểm tra/HInh chữ nhật.html" />
-        <option value="$PROJECT_DIR$/All Lab/Funny Circle.html" />
-        <option value="$PROJECT_DIR$/All Lab/Hình chữ nhật.html" />
-        <option value="$PROJECT_DIR$/All Lab/Kiểm tra/Baitap1.html" />
         <option value="$PROJECT_DIR$/All Lab/Kiểm tra/Baitap2.html" />
         <option value="$PROJECT_DIR$/All Lab/Kiểm tra/Baitap3.html" />
         <option value="$PROJECT_DIR$/All Lab/hình tròn.html" />
@@ -101,6 +108,19 @@
         <option value="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị nhỏ nhất.html" />
         <option value="$PROJECT_DIR$/Session 3/[Bài tập] Chuyển đổi giữa feet và meters/[Bài tập] Chuyển đổi giữa feet và meters.html" />
         <option value="$PROJECT_DIR$/All Lab/[Bài tập] Xây dựng lớp mô tả điện thoại.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập] Luyện tập sử dụng biểu thức chính quy.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập1] Luyện tập sử dụng biểu thức chính quy.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập2] Luyện tập sử dụng biểu thức chính quy.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập3] Luyện tập sử dụng biểu thức chính quy.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập4] Luyện tập sử dụng biểu thức chính quy.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập1] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập2] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập5] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập6] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập3] Làm việc với các đối tượng thông dụng.html" />
+        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập7] Làm việc với các đối tượng thông dụng.html" />
       </list>
     </option>
   </component>
@@ -145,6 +165,23 @@
               <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
               <item name="Session 3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
+              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
+              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
+              <item name="[Bài tập] Luyện tập sử dụng biểu thức chính quy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
+              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
+              <item name="[Bài tập] Làm việc với các đối tượng thông dụng" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -156,24 +193,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/All Lab/Kiểm tra" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java\Baitap 1\All Lab\Kiểm tra" />
-      <recent name="E:\Java\Baitap 1\Session 3" />
-      <recent name="E:\Java\Baitap 1\Session 3\[Bài tập] Luyện tập tạo và sử dụng hàm 02" />
-      <recent name="E:\Java\Baitap 1\Session 3\[Bài tập] Luyện tập tạo và sử dụng hàm 01" />
-      <recent name="E:\Java\Baitap 1\Session 2\[Bài tập] Luyện tập mảng 02" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java\Baitap 1\Session 3" />
       <recent name="E:\Java\Baitap 1\Session 2" />
       <recent name="E:\Java\Baitap 1\All Lab" />
       <recent name="E:\Java\Baitap 1\[Thực hành] Sử dụng vòng lặp for" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Làm việc với các đối tượng thông dụng" />
+      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Luyện tập sử dụng biểu thức chính quy" />
+      <recent name="E:\Java\Baitap 1\All Lab\Kiểm tra" />
+      <recent name="E:\Java\Baitap 1\Session 3" />
+      <recent name="E:\Java\Baitap 1\Session 3\[Bài tập] Luyện tập tạo và sử dụng hàm 02" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,12 +329,13 @@
       <workItem from="1566241176246" duration="16177000" />
       <workItem from="1566266203284" duration="6117000" />
       <workItem from="1566299073522" duration="588000" />
-      <workItem from="1566314326611" duration="657000" />
+      <workItem from="1566314326611" duration="2868000" />
+      <workItem from="1566318186549" duration="11980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510572000" />
+    <option name="totallyTimeSpent" value="524763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,7 +362,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.39869282" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -672,49 +710,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Session 3/[Thực hành] Funny circles bán kinh và chiều cao, rộng ngẫu nhiên.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/Game snake.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/[Bài tập] Xây dựng lớp mô tả điện thoại.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai53.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai45/script.js" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai45/index.html" />
-    <entry file="file://$PROJECT_DIR$/Session 3/[Bài tập] Ứng dụng quản lý sản phẩm sử dụng hàm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai52.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai51.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai48.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai47.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai43/bai3.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai43/bai1.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai40.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai41.html" />
-    <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai42.html" />
     <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai46.html" />
     <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai49.html" />
     <entry file="file://$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai44/bai1.html" />
@@ -732,17 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/Game Racing not done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,8 +835,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/All Lab/[Bài tập] Xây dựng lớp mô tả điện thoại.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 3/Game Racing not done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 3/Game snake.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập8] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập9] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập5] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập6] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập3] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập4] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập2] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập1] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập4] Luyện tập sử dụng biểu thức chính quy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập3] Luyện tập sử dụng biểu thức chính quy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập1] Luyện tập sử dụng biểu thức chính quy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập10] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập2] Luyện tập sử dụng biểu thức chính quy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Làm việc với các đối tượng thông dụng/[Bài tập7] Làm việc với các đối tượng thông dụng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>

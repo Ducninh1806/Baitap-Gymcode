@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMin(arr) {
+        let min = arr[0];
+        for (let i=1; i<arr.length;i++){
+            if  (min> arr[i]){
+                min= arr[i];
+            }
+        }return min;
+    }
+
+    let num=[];
+    for (i=0;i<101;i++){
+        num[i]= Math.floor(Math.random()*101)
+    }
+
+    function dispArr(num){
+        for (i=0;i<10;i++){
+            for (j=0;j<10;j++) {
+                num[i][j]="";
+            }
+        }
+
+
+    }
+
+
+
+    let minValue = findMin(num);
+    document.write(dispArr(num));
+
+    document.write("<br>");
+    document.write("The minium value is" + minValue);
+
+
+</script>
+</body>
+</html>
