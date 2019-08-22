@@ -6,37 +6,40 @@
 </head>
 <body>
 <script>
-    function findMin(arr) {
-        let min = arr[0];
-        for (let i=1; i<arr.length;i++){
-            if  (min> arr[i]){
-                min= arr[i];
-            }
-        }return min;
-    }
-
     let num=[];
-    for (i=0;i<101;i++){
-        num[i]= Math.floor(Math.random()*101)
+    for (i=0;i<100;i++){
+        num[i]=Math.floor(Math.random()*100+1)
     }
 
-    function dispArr(num){
-        for (i=0;i<10;i++){
-            for (j=0;j<10;j++) {
-                num[i][j]="";
+    function dispArr(arr) {
+        for (i=0;i<arr.length;i++){
+            document.write(arr[i]+ " ");
+            if  (i%10==9){
+                document.write( "<br>")
             }
         }
-
-
     }
 
+    dispArr(num);
 
+    // let search= parseInt(prompt("Enter a number for to search"));
+    let minValue= num[0];
+    for (i=1;i<num.length;i++){
+        if (minValue>num[i]){
+            minValue= num[i]
+        }
+    }
 
-    let minValue = findMin(num);
-    document.write(dispArr(num));
+    document.write("Min value in the Array is: " + minValue+"<br>");
 
-    document.write("<br>");
-    document.write("The minium value is" + minValue);
+    let maxValue= num[0];
+    for (i=1;i<num.length;i++){
+        if (maxValue<num[i]){
+            maxValue= num[i]
+        }
+    }
+
+    document.write("Max value in the Array is: " + maxValue);
 
 
 </script>

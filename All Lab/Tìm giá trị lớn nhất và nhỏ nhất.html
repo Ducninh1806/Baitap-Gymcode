@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let total= parseInt(prompt("Total number in the Array "))
+    let array = [];
+    for (i=0;i<total;i++){
+        array[i]=Math.floor(Math.random()*100);
+    }
+
+    function dispArr(arr) {
+        for (i=0;i<arr.length;i++){
+            document.write(arr[i]+" ");
+            if (i%10==9){
+                document.write("<br>");
+            }
+        }
+    }
+
+    dispArr(array);
+
+
+    let minValue= array[0];
+    for (i=1;i<array.length;i++){
+        if(minValue>array[i]){
+            minValue=array[i];
+        }
+    }
+
+    document.write(" Min value in the Array is: "+ minValue+ "<br>");
+
+    let maxValue= array[0];
+    for (i=1;i<array.length;i++){
+        if (maxValue<array[i]){
+            maxValue=array[i];
+        }
+    }
+
+    document.write("Max value in the Array is: "+ maxValue + "<br>");
+    let num= parseInt(prompt("Enter a number in the Array: "));
+    document.write("Enter a number in the Array: "+ num+ "<br>" );
+
+    let index=0;
+    search(array,num);
+    document.write("Found "+ num + " in the array "+ index + "<br>" );
+
+    let a=0;
+    function search(arr,data) {
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]==data){
+                document.write("Position of number: "+ data + " at position " + i+ "<br>");
+                index++;
+            }
+        } return index;
+    }
+
+
+</script>
+</body>
+</html>

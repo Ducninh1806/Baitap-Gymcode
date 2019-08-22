@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" height="500" width=" 700" style="border: 1px solid yellow"></canvas>
+<script>
+    let canvas= document.getElementById("myCanvas");
+    let context= canvas.getContext("2d");
+    let isGameover= false;
+
+    let Circle = function () {
+        this.x =50 ;
+        this.y =50;
+
+        this.dx= 3;
+        this.dy= 3;
+        this.radius=10;
+    };
+
+    let Paddle = function (){
+        this.x= canvas.width/2;
+        this.y= canvas.height-30;
+        this.width= 100;
+        this.height=20;
+        this.speed= 10;
+        this.isMoveLeft= false;
+        this.isMoveRight= false;
+
+    };
+
+    let ball = new Circle();
+    let paddle = new Paddle();
+
+    function creatCircle (){
+        context.beginPath();
+        context.arc(ball.x,ball.y,ball.radius,0,2*Math.PI);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath()
+    }
+
+    function creatPaddle() {
+        context.beginPath();
+        context.rect(paddle.x,paddle.y,paddle.width,paddle.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function handlingBallMove() {
+        ball.x += ball.dx;
+        ball.y += ball.dy;
+    }
+
+    function handlingBallMoveInCanvas() {
+        if (ball.x< ball.radius|| ball.x>canvas.width-ball.radius ){
+            ball.dx = - ball.dx;
+        }else if (ball.y<ball.radius ) {
+            ball.dy = - ball.dy;
+        }
+    }
+
+    document.addEventListener("keyup", function (event) {
+        if (event.keyCode==37){
+            paddle.isMoveLeft= false;
+        }
+        if (event.keyCode==39){
+            paddle.isMoveRight= false;
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.keyCode==37){
+            paddle.isMoveLeft= true;
+        }
+        if (event.keyCode==39){
+            paddle.isMoveRight= true;
+        }
+    });
+
+    function handlingPaddle() {
+        if (paddle.isMoveLeft ==true){
+            paddle.x -= paddle.speed;
+        } else if (paddle.isMoveRight ==true) {
+            paddle.x += paddle.speed;
+        }
+        if (paddle.x<0){
+            paddle.x=0;
+        } else if (paddle.x> canvas.width - paddle.width) {
+            paddle.x=canvas.width- paddle.width
+        }
+    }
+
+
+    
+    
+    
+    
+    
+    
+
+    function draw() {
+
+        if (!isGameover) {
+
+            context.clearRect(0,0,canvas.width,canvas.height);
+
+            creatCircle();
+
+            creatPaddle();
+
+            handlingBallMove();
+
+            handlingBallMoveInCanvas();
+
+            handlingPaddle();
+
+            if (ball.x-ball.radius>paddle.x && ball.x+ball.radius<paddle.x+paddle.width && ball.y> paddle.y){
+                ball.dy=-ball.dy
+            }
+
+            if (ball.y>= canvas.height) {
+                isGameover=true;
+            }
+
+            requestAnimationFrame(draw);
+        }else{
+            console.log("Gameover")
+        }
+    }
+
+    draw();
+
+</script>
+</body>
+</html>

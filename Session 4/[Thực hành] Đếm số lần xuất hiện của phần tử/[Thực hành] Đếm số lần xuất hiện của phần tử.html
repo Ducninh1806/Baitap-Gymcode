@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Đếm số lần xuất hiện của phần tử</title>
+</head>
+<body>
+<script>
+
+    let array= [];
+    for (i=0;i<100;i++){
+        array[i]= Math.floor(Math.random()*50);
+    }
+
+    function dispArr(arr) {
+        for (i=0;i<arr.length;i++){
+            document.write(arr[i]+" ");
+            if (i%10==9){
+                document.write("<br>");
+            }
+        }
+    }
+
+    dispArr(array);
+
+    let num= parseInt(prompt("Enter a number for to search for: "));
+
+    let total=0;
+    function search(arr,data) {
+        for (i=0;i<arr.length;i++){
+            if (arr[i]===data){
+                total++;
+                document.write( data + " position at " + i+"<br>")
+            }
+        }return total;
+    }
+
+
+    search(array,num);
+    document.write("Enter a number for to search for: "+ num+"<br>");
+    document.write("Found " + num+ " at position "+ total+"<br>");
+
+
+
+
+</script>
+</body>
+</html>

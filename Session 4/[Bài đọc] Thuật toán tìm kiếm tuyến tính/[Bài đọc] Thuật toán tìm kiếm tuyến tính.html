@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài đọc] Thuật toán tìm kiếm tuyến tính</title>
+</head>
+<body>
+<script>
+    function reqSearch(arr,data) {
+        for (i=0;i<arr.length;i++) {
+            if (arr[i]==data){
+                return true;
+            }
+        } return false;
+    }
+
+
+    let num=[];
+    for (let i=0;i<100;++i){
+        num[i]=Math.floor(Math.random()*101)
+    }
+
+    function dispArr(arr) {
+        for (i=0;i<arr.length;++i){
+            document.write(arr[i]+" ");
+            if (i %10==9){
+                document.write("<br>")
+            }
+        }if (i%10!=0){
+            document.write("<br>")
+        }
+    }
+
+    dispArr(num);
+
+    let search= parseInt(prompt("Enter a number for to search"));
+
+    if (reqSearch(num,search)){
+        document.write((search + " is in the array")
+    }else {
+        document.write((search+" is not in the array");
+    }
+
+</script>
+
+
+</body>
+</html>

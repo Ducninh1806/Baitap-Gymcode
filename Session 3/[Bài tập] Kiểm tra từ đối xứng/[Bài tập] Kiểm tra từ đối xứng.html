@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="text" type="text" >
+<button id="click" type="button" oninput="click()">Click</button>
+
+<script>
+
+    function isPalindrome(arr) {
+
+        let check =true;
+        let i=0
+        while (i<=(arr.length/2)){
+            if (arr[i]===arr[arr.length-i-1]) {
+                i++;
+            }else {
+                check=false;
+                break;
+            }
+        }
+        if (check ==true){
+            document.write("Chuỗi đối xứng")
+        } else{
+            document.write("Chuỗi không đối xứng")
+        }
+    }
+
+        isPalindrome("1234321");
+
+
+
+
+
+    // function isPalindrome(arr) {
+    //     for (i=0;i<(arr.length/2);i++){
+    //         if (arr[i]===arr[arr.length-1-i]){
+    //             document.write("Chuỗi đối xứng")
+    //         }
+    //         else {
+    //             document.write("Chuỗi không đối xứng")
+    //         }
+    //     }
+    // }
+    // isPalindrome("abccvweba")
+</script>
+</body>
+</html>
