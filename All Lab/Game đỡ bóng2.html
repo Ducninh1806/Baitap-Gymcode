@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" height="700" width=" 1000" style="border: 1px solid yellow"></canvas>
+<script>
+    let canvas= document.getElementById("myCanvas");
+    let context= canvas.getContext("2d");
+
+
+    let Paddle1 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+        this.speed= 10;
+        this.isMoveLeft= false;
+        this.isMoveRight= false;
+    };
+    let Paddle2 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+        this.speed= 10;
+        this.isMoveUp= false;
+        this.isMoveDown= false;
+    };
+
+    let
+
+    let paddle1= new Paddle1(canvas.width/2-50, canvas.height-15, 100, 10);
+    let paddle2= new Paddle1(canvas.width/2-50, 5, 100, 10);
+    let paddle3= new Paddle2( 5, canvas.height/2-50, 10, 100);
+    let paddle4= new Paddle2(canvas.width-15, canvas.height/2-50, 10, 100);
+
+    function creatpaddle1() {
+        context.beginPath();
+        context.rect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatpaddle2() {
+        context.beginPath();
+        context.rect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatpaddle3() {
+        context.beginPath();
+        context.rect(paddle3.x, paddle3.y, paddle3.width, paddle3.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatpaddle4() {
+        context.beginPath();
+        context.rect(paddle4.x, paddle4.y, paddle4.width, paddle4.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+
+
+    document.addEventListener("keydown",function (event) {
+        if  (event.keyCode==37){
+            paddle1.isMoveLeft = true;
+        }
+        else if  (event.keyCode==39){
+            paddle1.isMoveRight = true;
+        }
+        else if  (event.keyCode==38) {
+            paddle3.isMoveUp = true;
+        }
+        else if  (event.keyCode==40) {
+            paddle3.isMoveDown = true;
+
+        }
+    });
+    document.addEventListener("keyup",function (event) {
+        if  (event.keyCode==37){
+            paddle1.isMoveLeft = false;
+        }
+        else if  (event.keyCode==39){
+            paddle1.isMoveRight = false;
+        }
+        else if  (event.keyCode==38) {
+            paddle3.isMoveUp = false;
+        }
+        else if  (event.keyCode==40) {
+            paddle3.isMoveDown = false;
+        }
+    });
+
+    function handlingMovePaddle() {
+        if (paddle1.isMoveLeft == true ){
+            paddle1.x -= paddle1.speed;
+            paddle2.x += paddle2.speed;
+        }
+        else if(paddle1.isMoveRight == true ){
+            paddle1.x += paddle1.speed;
+            paddle2.x -= paddle2.speed;
+        }
+        else if(paddle3.isMoveUp == true ){
+            paddle3.y += paddle3.speed;
+            paddle4.y -= paddle4.speed;
+        }
+        else if(paddle3.isMoveDown == true ){
+            paddle3.y -= paddle3.speed;
+            paddle4.y += paddle4.speed;
+        }
+    }
+
+
+
+
+
+
+
+    function draw() {
+        context.clearRect(0,0,canvas.width,canvas.height);
+
+        creatpaddle1();
+        creatpaddle2();
+        creatpaddle3();
+        creatpaddle4();
+
+        handlingMovePaddle();
+
+
+
+        requestAnimationFrame(draw);
+
+    }
+
+    draw();
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+   let mang = ["0324936535","0544123456"];
+
+        //, '0383664333',"0854123456","0912445677"
+   function kiemtra(str){
+    let dauso= /^[0][3][2-9][0-9]{7}|[0][9][6-8][0-9]{7}$/;
+
+    // |
+   for (let i=0;i<str.length;i++)
+        if  (dauso.test(str[i])){
+            document.write(str[i]+ "  ");
+        }else {
+            document.write("không có")
+        }
+   }
+    kiemtra(mang)
+    
+    
+</script>
+</body>
+</html>

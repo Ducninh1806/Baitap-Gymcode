@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body onload="moveno()">
-<h1> DO YOU LOVE ME</h1>
+<body>
+<input type="text" oninput="isPrime()" id="nhapso">
 
-<button type="button" onclick="alert('I LOVE YOU, TOO!!!')">Yes</button>
-<button type="button" onmouseover="no()" style="position: relative" id="no">No</button>
+
+<span id="result"></span>
+
 <script>
 
-    function no() {
-        let no = document.getElementById("no");
-        no.style.left= Math.random()*window.innerWidth+"px";
-        no.style.top= Math.random()*window.innerHeight+"px";
+    function check(a) {
+        for (i=2;i<a.length;i++){
+            if (a%i==0){
+                return false;
+            }
+        } return true;
     }
-    function moveno() {
-        document.addEventListener("moveno",no);
+
+    function isPrime() {
+        let num = document.getElementById("text");
+        let b = check(num);
+        document.getElementById('result').innerHTML= b ;
     }
+
 </script>
 </body>
 </html>

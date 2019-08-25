@@ -17,14 +17,14 @@
 
         this.dx= 3;
         this.dy= 3;
-        this.radius=10;
+        this.radius=20;
     };
 
     let Paddle = function (){
         this.x= canvas.width/2;
         this.y= canvas.height-30;
         this.width= 100;
-        this.height=20;
+        this.height=10;
         this.speed= 10;
         this.isMoveLeft= false;
         this.isMoveRight= false;
@@ -94,7 +94,11 @@
         }
     }
 
-
+    function isGameOver() {
+        if (ball.y>= canvas.height) {
+            isGameover=true;
+        }
+    }
     
     
     
@@ -118,13 +122,11 @@
 
             handlingPaddle();
 
-            if (ball.x-ball.radius>paddle.x && ball.x+ball.radius<paddle.x+paddle.width && ball.y> paddle.y){
+            if (ball.x-ball.radius>paddle.x && ball.x+ball.radius<paddle.x+paddle.width && ball.y> paddle.y - paddle.height ){
                 ball.dy=-ball.dy
             }
 
-            if (ball.y>= canvas.height) {
-                isGameover=true;
-            }
+            isGameOver();
 
             requestAnimationFrame(draw);
         }else{

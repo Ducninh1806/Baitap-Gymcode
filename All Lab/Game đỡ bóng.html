@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" height="700" width=" 1000" style="border: 1px solid yellow"></canvas>
+<script>
+    let canvas= document.getElementById("myCanvas");
+    let context= canvas.getContext("2d");
+    let isGameOver= false;
+
+
+    let Circle = function () {
+        this.x = 30;
+        this.y = canvas.height- 30;
+        this.dx = 2;
+        this.dy = 3;
+        this.radius = 10;
+    };
+
+    let Paddle1 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+        this.speed= 10;
+        this.isMoveLeft= false;
+        this.isMoveRight= false;
+    };
+    let Paddle2 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+        this.speed= 10;
+        this.isMoveUp= false;
+        this.isMoveDown= false;
+    };
+
+    let BlockStand1 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+    };
+    let BlockStand2 = function (x,y,width,height){
+        this.x= x;
+        this.y= y;
+        this.width= width;
+        this.height=height;
+    };
+
+    let circle = new Circle();
+
+    let long = 120;
+    let depth = 15;
+
+    let paddle1= new Paddle1(canvas.width/2-50, canvas.height-15, 100, 15);
+    let paddle2= new Paddle1(canvas.width/2-50, 0, 100, 15);
+    let paddle3= new Paddle2( 0, canvas.height/2-50, 15, 100);
+    let paddle4= new Paddle2(canvas.width-15, canvas.height/2-50, 15, 100);
+
+    let blockStand1= new BlockStand1(0,0,long,depth);
+    let blockStand2= new BlockStand1(canvas.width-long,0,long,depth);
+    let blockStand3= new BlockStand1(0,0,depth,long);
+    let blockStand4= new BlockStand1(0,canvas.height-long,depth,long);
+    let blockStand5= new BlockStand2(0,canvas.height,long,-depth);
+    let blockStand6= new BlockStand2(canvas.width-long,canvas.height,long,-depth);
+    let blockStand7= new BlockStand2(canvas.width -depth,canvas.height-long,depth,long);
+    let blockStand8= new BlockStand2(canvas.width - depth,0,depth,long);
+
+
+    function creatCircle() {
+        context.beginPath();
+        context.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+
+    function creatPaddle1() {
+        context.beginPath();
+        context.rect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatPaddle2() {
+        context.beginPath();
+        context.rect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatPaddle3() {
+        context.beginPath();
+        context.rect(paddle3.x, paddle3.y, paddle3.width, paddle3.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatPaddle4() {
+        context.beginPath();
+        context.rect(paddle4.x, paddle4.y, paddle4.width, paddle4.height);
+        context.fillStyle= "red";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand1() {
+        context.beginPath();
+        context.rect(blockStand1.x, blockStand1.y, blockStand1.width, blockStand1.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand2() {
+        context.beginPath();
+        context.rect(blockStand2.x, blockStand2.y, blockStand2.width, blockStand2.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand3() {
+        context.beginPath();
+        context.rect(blockStand3.x, blockStand3.y, blockStand3.width, blockStand3.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand4() {
+        context.beginPath();
+        context.rect(blockStand4.x, blockStand4.y, blockStand4.width, blockStand4.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand5() {
+        context.beginPath();
+        context.rect(blockStand5.x, blockStand5.y, blockStand5.width, blockStand5.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand6() {
+        context.beginPath();
+        context.rect(blockStand6.x, blockStand6.y, blockStand6.width, blockStand6.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand7() {
+        context.beginPath();
+        context.rect(blockStand7.x, blockStand7.y, blockStand7.width, blockStand7.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+    function creatBlockStand8() {
+        context.beginPath();
+        context.rect(blockStand8.x, blockStand8.y, blockStand8.width, blockStand8.height);
+        context.fillStyle= "blue";
+        context.fill();
+        context.closePath();
+    }
+
+
+    function creat4Paddle() {
+        creatPaddle1();
+        creatPaddle2();
+        creatPaddle3();
+        creatPaddle4();
+    }
+
+    function creat4BlockStand(){
+        creatBlockStand1();
+        creatBlockStand2();
+        creatBlockStand3();
+        creatBlockStand4();
+        creatBlockStand5();
+        creatBlockStand6();
+        creatBlockStand7();
+        creatBlockStand8();
+    }
+
+    document.addEventListener("keydown",function (event) {
+        if  (event.keyCode==37){
+            paddle1.isMoveLeft = true;
+        }
+        else if  (event.keyCode==39){
+            paddle1.isMoveRight = true;
+        }
+        else if  (event.keyCode==38) {
+            paddle3.isMoveUp = true;
+        }
+        else if  (event.keyCode==40) {
+            paddle3.isMoveDown = true;
+
+        }
+    });
+    document.addEventListener("keyup",function (event) {
+        if  (event.keyCode==37){
+            paddle1.isMoveLeft = false;
+        }
+        else if  (event.keyCode==39){
+            paddle1.isMoveRight = false;
+        }
+        else if  (event.keyCode==38) {
+            paddle3.isMoveUp = false;
+        }
+        else if  (event.keyCode==40) {
+            paddle3.isMoveDown = false;
+        }
+    });
+
+    function handlingMovePaddle() {
+        if (paddle1.isMoveLeft == true ){
+            paddle1.x -= paddle1.speed;
+            paddle2.x += paddle2.speed;
+        }
+        else if(paddle1.isMoveRight == true ){
+            paddle1.x += paddle1.speed;
+            paddle2.x -= paddle2.speed;
+        }
+        else if(paddle3.isMoveUp == true ){
+            paddle3.y += paddle3.speed;
+            paddle4.y -= paddle4.speed;
+        }
+        else if(paddle3.isMoveDown == true ){
+            paddle3.y -= paddle3.speed;
+            paddle4.y += paddle4.speed;
+        }
+        // if  (paddle1.x< long){
+        //     paddle1.x =  long;
+        //     paddle2.x = canvas.width - long - paddle2.width;
+        // }
+        // else if (paddle1.x> canvas.width - long - paddle1.width) {
+        //     paddle2.x = long;
+        //     paddle1.x = canvas.width - long - paddle2.width;
+        // }
+        // else if (paddle3.y< long) {
+        //     paddle3.y = long;
+        //     paddle4.y = canvas.height - long - paddle4.height;
+        // }
+        // else if (paddle3.y> canvas.height - long - paddle3.height) {
+        //     paddle4.y = long;
+        //     paddle3.y = canvas.height - long - paddle3.height;
+        // }
+    }
+
+    function handlingMoveBall() {
+        circle.x += circle.dx ;
+        circle.y -= circle.dy ;
+    }
+
+
+
+
+
+
+    function checkGameOver() {
+        if (circle.x <0 || circle.x > canvas.width|| circle.y < 0 || circle.y > canvas.height) {
+            isGameOver=true;
+        }
+    }
+
+    function draw() {
+        if (!isGameOver){
+
+            context.clearRect(0,0,canvas.width,canvas.height);
+
+            creatCircle();
+
+            creat4Paddle();
+
+            creat4BlockStand();
+
+            handlingMovePaddle();
+
+            handlingMoveBall();
+
+            if (    circle.x - circle.radius >= paddle1.x && circle.x +circle.radius <= paddle1.x + paddle1.width &&
+                        circle.y + circle.radius>= canvas.height - paddle1.height
+                ||
+                    circle.x - circle.radius >= paddle2.x && circle.x + circle.radius <= paddle2.x + paddle2.width &&
+                        circle.y - circle.radius <= paddle2.height
+            ) {
+                circle.dy = -circle.dy
+
+            }
+            if (circle.y - circle.radius >= paddle3.y && circle.y +circle.radius <= paddle3.y + paddle3.height &&
+                    circle.x - circle.radius <= paddle3.width
+                ||
+                circle.y - circle.radius >= paddle4.y && circle.y +circle.radius <= paddle4.y + paddle4.height &&
+                    circle.x + circle.radius >= canvas.width- paddle4.width
+            ) {
+                circle.dx = -circle.dx;
+            }
+
+
+
+
+            checkGameOver();
+
+            requestAnimationFrame(draw);
+        }else {
+            console.log("GameOver")
+        }
+    }
+
+    draw();
+
+
+
+
+
+
+</script>
+</body>
+</html>
