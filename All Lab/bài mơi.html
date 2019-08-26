@@ -5,6 +5,64 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let Rat = function (name,weight,speed) {
+        this.name= name;
+        this.weight= weight;
+        this.speed=speed;
+        this.isLive = function (weight) {
+            if (this.weight>0){
+                return true;
+            } else {
+                return false;
+            }
+        };
+        this.voice= function () {
+            document.write(this.name+" chit,chit...")
+        }
 
+    }
+    
+    let Cat = function (cat,weight,speed,) {
+        this.name= cat;
+        this.weight= weight;
+        this.speed= speed;
+        this.voice = function () {
+            document.write(this.name+" meo meo...")
+        };
+        this.getEat =function (chuot) {
+            if (this.speed> chuot.speed && chuot.weight>0){
+                return chuot.isLive = true;
+            }else {
+                return chuot.isLive= false;
+            }
+        }
+        this.eat= function (chuot) {
+            if (chuot.isLive) {
+                chuot.weight--;
+                this.weight++;
+            }
+        }
+        this.getWeight=function () {
+            return this.weight;
+        }
+        this.setWeight=function (weight) {
+            this.weight=weight
+        }
+    }
+
+
+    let Jerry= new Rat("Jerry",5,5);
+    let Tom= new Cat("Tom",20,10);
+
+    Jerry.voice();
+    Tom.voice();
+
+
+
+    Tom.eat(Jerry);
+    document.write("Trọng lượng hiện tại của Tom: "+Tom.weight)
+
+</script>
 </body>
 </html>

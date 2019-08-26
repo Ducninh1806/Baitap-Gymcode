@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060f6c76-3dce-463c-89d6-b97e9e2a6cdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/All Lab/Game đỡ bóng.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/All Lab/Game đỡ bóng2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/All Lab/Adam vs Eva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/All Lab/bài chuột và mèo.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Session 4/Cong tac bong den.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Game đơn giản - di chuyển đối tượng/[Bài tập] Game đơn giản - di chuyển đối tượng.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session 5/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/All Lab/BÀI MÁY TINH/Game study  1 - Đỡ bóng.html" beforeDir="false" afterPath="$PROJECT_DIR$/All Lab/BÀI MÁY TINH/Game study  1 - Đỡ bóng.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/All Lab/[bài tập thực hành DOYOULOVEME.html" beforeDir="false" afterPath="$PROJECT_DIR$/All Lab/[bài tập thực hành DOYOULOVEME.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All Lab/bài mơi.html" beforeDir="false" afterPath="$PROJECT_DIR$/All Lab/bài mơi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Session 4/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/Session 4/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +31,17 @@
     <favorites_list name="Baitap 1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,16 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Session 3/[Thực hành] Kiểm tra ký tự đầu tiên của chuỗi có phải là chữ hoa không..html" />
-        <option value="$PROJECT_DIR$/New folder/CodeGym-Module-1-master/bai55.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Thực hành] Kiểm tra ký tự đầu tiên của chuỗi có phải là chữ hoa không/[Thực hành] Kiểm tra ký tự đầu tiên của chuỗi có phải là chữ hoa không..html" />
-        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Validate account/[Bài tập] Validate account.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Thực hành] Kiểm tra Mã quốc gia nước Mỹ/[Thực hành] Kiểm tra Mã quốc gia nước Mỹ.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Validate số điện thoại/[Bài tập] Validate số điện thoại.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Validate email/[Bài tập] Validate email.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Bài tập] Validate tên của lớp học/[Bài tập] Validate tên của lớp học.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị lớn nhất.html" />
-        <option value="$PROJECT_DIR$/Session 4/[Thực hành] Tìm kiếm giá trị lớn nhất hoặc nhỏ nhất/[Thực hành] Tìm kiếm giá trị nhỏ nhất.html" />
         <option value="$PROJECT_DIR$/Session 3/[Bài tập] Chuyển đổi giữa feet và meters/[Bài tập] Chuyển đổi giữa feet và meters.html" />
         <option value="$PROJECT_DIR$/All Lab/[Bài tập] Xây dựng lớp mô tả điện thoại.html" />
         <option value="$PROJECT_DIR$/Session 4/[Bài tập] Luyện tập sử dụng biểu thức chính quy/[Bài tập] Luyện tập sử dụng biểu thức chính quy.html" />
@@ -93,9 +95,19 @@
         <option value="$PROJECT_DIR$/Session 5/Bouncing Balls of 4 paddle.html" />
         <option value="$PROJECT_DIR$/Session 5/debug-master/index.html" />
         <option value="$PROJECT_DIR$/Session 2/[Thực hành] Sự kiện chuột.html" />
-        <option value="$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html" />
         <option value="$PROJECT_DIR$/All Lab/[bài tập thực hành DOYOULOVEME.html" />
         <option value="$PROJECT_DIR$/Session 5/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng.html" />
+        <option value="$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html" />
+        <option value="$PROJECT_DIR$/All Lab/bài mơi.html" />
+        <option value="$PROJECT_DIR$/All Lab/Kiểm tra/objects-master/script.js" />
+        <option value="$PROJECT_DIR$/All Lab/Kiểm tra/objects-master/index.html" />
+        <option value="$PROJECT_DIR$/All Lab/bài chuột và mèo.html" />
+        <option value="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Bài 1.html" />
+        <option value="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 1.html" />
+        <option value="$PROJECT_DIR$/All Lab/HIenthi day fibonacci.html" />
+        <option value="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 4.html" />
+        <option value="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 3.html" />
+        <option value="$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 2.html" />
       </list>
     </option>
   </component>
@@ -112,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,124 +140,43 @@
             <path>
               <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="All Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="BÀI MÁY TINH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeGym-Module-1-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeGym-Module-1-master" type="462c0819:PsiDirectoryNode" />
-              <item name="bai56" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeGym-Module-1-master" type="462c0819:PsiDirectoryNode" />
-              <item name="bai64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeGym-Module-1-master" type="462c0819:PsiDirectoryNode" />
-              <item name="bai65" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 3" type="462c0819:PsiDirectoryNode" />
-              <item name="Kiểm tra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
-              <item name="[Bài tập] Luyện tập sử dụng biểu thức chính quy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
-              <item name="[Bài tập] Validate số điện thoại" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 4" type="462c0819:PsiDirectoryNode" />
-              <item name="[Bài tập] Validate tên của lớp học" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
               <item name="Session 5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
               <item name="Session 5" type="462c0819:PsiDirectoryNode" />
-              <item name="[Bài tập] Sử dụng thuật toán tìm kiếm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 5" type="462c0819:PsiDirectoryNode" />
-              <item name="debug-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Baitap 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Baitap 1" type="462c0819:PsiDirectoryNode" />
-              <item name="Session 5" type="462c0819:PsiDirectoryNode" />
-              <item name="Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng" type="462c0819:PsiDirectoryNode" />
+              <item name="Thi cuối module" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/All Lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Session 5/Thi cuối module" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\Baitap 1\Session 5\Thi cuối module" />
+      <recent name="E:\Java\Baitap 1\All Lab" />
+      <recent name="E:\Java\Baitap 1\All Lab\BÀI MÁY TINH" />
+      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Làm việc với các đối tượng thông dụng" />
+      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Luyện tập sử dụng biểu thức chính quy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java\Baitap 1\Session 4" />
       <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Game đơn giản - di chuyển đối tượng" />
       <recent name="E:\Java\Baitap 1\Session 3" />
       <recent name="E:\Java\Baitap 1\Session 2" />
       <recent name="E:\Java\Baitap 1\All Lab" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java\Baitap 1\All Lab" />
-      <recent name="E:\Java\Baitap 1\All Lab\BÀI MÁY TINH" />
-      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Làm việc với các đối tượng thông dụng" />
-      <recent name="E:\Java\Baitap 1\Session 4\[Bài tập] Luyện tập sử dụng biểu thức chính quy" />
-      <recent name="E:\Java\Baitap 1\All Lab\Kiểm tra" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,12 +312,16 @@
       <workItem from="1566542030317" duration="7628000" />
       <workItem from="1566575805408" duration="4696000" />
       <workItem from="1566634173290" duration="10244000" />
-      <workItem from="1566694052310" duration="3223000" />
+      <workItem from="1566694052310" duration="4792000" />
+      <workItem from="1566781548984" duration="1522000" />
+      <workItem from="1566788901840" duration="3207000" />
+      <workItem from="1566792608406" duration="3421000" />
+      <workItem from="1566807585135" duration="6111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="646141000" />
+    <option name="totallyTimeSpent" value="661971000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,6 +334,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49673203" visible="true" weight="0.296875" />
       <window_info id="Structure" order="1" sideWeight="0.501634" side_tool="true" weight="0.2797619" />
@@ -761,120 +698,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/All Lab/Tìm giá trị lớn nhất và nhỏ nhất.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Lab/Video bài tập Tic tac toe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sự kiện bàn phím.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 2/[Bài tập] Luyện tập vòng lặp 02/[Bài tập3] Luyện tập vòng lặp 02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Lab/Game dua xe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/[Bài tập] Kiểm tra từ đối xứng/[Bài tập] Kiểm tra từ đối xứng.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 1/[Bài tập] Câu lệnh switch-case/switch case.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 1/[Bài tập] Câu lệnh switch-case/[Bài tập] Câu lệnh switch-case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 4/[Thực hành] Đếm số lần xuất hiện của phần tử/[Thực hành] Đếm số lần xuất hiện của phần tử.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="96" column="103" selection-start-line="96" selection-start-column="103" selection-end-line="96" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Lab/Mo phong den pin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="65" selection-start-line="65" selection-end-line="96" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 4/[Bài tập] Game đơn giản - di chuyển đối tượng/[Bài tập] Game đơn giản - di chuyển đối tượng.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 3/Game Racing not done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Lab/BÀI MÁY TINH/Game stydio 2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All Lab/Game đỡ bóng2.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -914,25 +737,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Session 4/Viết chương trình Công tắc bóng đèn.html" />
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/case_studio/tetris/tetris.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/case_studio/tetris/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/case_studio/tetris/tetris.js" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/case_studio/tetris/index.html" />
     <entry file="file://$PROJECT_DIR$/Session 5/debug-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Session 5/Bouncing Balls of 4 paddle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="65" lean-forward="true" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -988,35 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/[Thực hành] Đếm số lần xuất hiện của phần tử.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai56/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2122">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai56/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/[Thực hành] Đếm số lần xuất hiện của phần tử.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/style.css" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai56/script.js" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai56/index.html" />
     <entry file="file://$PROJECT_DIR$/Session 4/Cong tac bong den.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1024,24 +809,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="66" column="1" lean-forward="true" selection-end-line="66" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="42" column="8" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/main.js" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai65/index.html" />
     <entry file="file://$PROJECT_DIR$/All Lab/[bài tập thực hành DOYOULOVEME.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1049,32 +818,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai64.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai62.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai59.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai60.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai58.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai61.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai64.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai62.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai59.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai60.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai58.html" />
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai61.html" />
     <entry file="file://$PROJECT_DIR$/Session 5/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng/Làm bài tập Ứng dụng quản lý sản phẩm sử dụng mảng.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -1086,17 +835,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai57.html">
+    <entry file="file://$PROJECT_DIR$/CodeGym-Module-1-master/bai57.html" />
+    <entry file="file://$PROJECT_DIR$/../New folder/CodeGym-Module-1-master/bai19/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Session 5/[Bài tập] Sử dụng thuật toán tìm kiếm/[Bài tập] Sử dụng thuật toán tìm kiếm.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 4/[Bài đọc] Thuật toán tìm kiếm tuyến tính/[Bài đọc] Thuật toán tìm kiếm tuyến tính.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/BÀI MÁY TINH/Game stydio 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/[Bài tập] Tic tac toe.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/bài mơi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 5/Bouncing Balls of 4 paddle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1615">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/Kiểm tra/objects-master/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/Kiểm tra/objects-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/bài chuột và mèo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 2/Game Puzzle/Game Puzzle.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 2/Game Puzzle/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Lab/HIenthi day fibonacci.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session 5/Thi cuối module/[Thi] Câu 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>

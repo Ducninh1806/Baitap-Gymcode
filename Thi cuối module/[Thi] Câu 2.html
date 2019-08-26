@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,index) {
+        let newArray=[];
+
+        for (let i= 0; i< arr.length; i++){
+            if (arr[i]!==index){
+                newArray.push(arr[i]);
+            }
+        } return newArray
+    }
+
+    let array1= [12,6,3,7,21,5,7];
+    let a= tryRemoveFromArray(array1,2) ;
+    document.write("Mang đã loại bỏ: "+ a+ "<br>");
+
+    let array2= [12,6,3,7,21,5,7];
+    let b= tryRemoveFromArray(array2,12);
+    document.write("Mang đã loại bỏ: "+ b+ "<br>");
+
+
+    let array3= [12,6,3,7,21,5,7];
+    let c= tryRemoveFromArray(array3,7);
+    document.write("Mang đã loại bỏ: "+ c+ "<br>");
+
+
+    let array4= [12,6,3,4,21,5,7];
+    let d= tryRemoveFromArray(array4,7);
+    document.write("Mang đã loại bỏ: "+ d+ "<br>");
+
+
+</script>
+</body>
+</html>
